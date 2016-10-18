@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/community_fragment_topview"
+            layout="@layout/topview_arrows_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/community_photo_btn"
+            android:background="@null"
+            android:src="@mipmap/community_photo_btn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/bodyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.malinskiy.superrecyclerview.SuperRecyclerView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+                app:layout_moreProgress="@layout/view_more_progress"
+                app:recyclerClipToPadding="true"
+                app:scrollbarStyle="outsideOverlay"/>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                layout="@layout/layout_editview"/>
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/video_progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:cpb_background_progressbar_color="@android:color/white"
+                app:cpb_background_progressbar_width="3dp"
+                app:cpb_progressbar_color="@color/colorAccent"
+                app:cpb_progressbar_width="3dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

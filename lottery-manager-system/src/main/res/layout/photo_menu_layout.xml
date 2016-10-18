@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/view_line_6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/photo_menu_string1"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@android:color/white"
+            style="@style/text_size_16_text_color_17"
+            android:clickable="true"
+            android:id="@+id/photo_menu_tv1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/photo_menu_string2"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="0.5dp"
+            android:background="@android:color/white"
+            style="@style/text_size_16_text_color_17"
+            android:clickable="true"
+            android:id="@+id/photo_menu_tv2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/photo_menu_string3"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="0.5dp"
+            android:background="@android:color/white"
+            style="@style/text_size_16_text_color_17"
+            android:clickable="true"
+            android:id="@+id/photo_menu_tv3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/site_declare_btn2"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/white"
+            style="@style/text_size_16_text_color_17"
+            android:clickable="true"
+            android:id="@+id/photo_menu_tv4"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

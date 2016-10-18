@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+             android:descendantFocusability="blocksDescendants"
+    >
+
+    <FrameLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:visibility="visible"
+        android:id="@+id/photo_grid_item_0">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/photo_grid_item_image"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="visible"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_grid_item_isselected_2"
+            android:layout_gravity="right"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:button="@drawable/pay_way_check"
+            android:checked="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:background="#656666"
+        android:id="@+id/photo_grid_item_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍摄照片"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            style="@style/text_size_14_text_white"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_grid_item_image1"
+            android:src="@mipmap/photo_camera_icon"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"/>
+
+    </FrameLayout>
+
+</FrameLayout>

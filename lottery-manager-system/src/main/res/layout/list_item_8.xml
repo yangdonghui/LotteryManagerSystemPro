@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="90dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="64dp"
+            android:id="@+id/list_item_8_icon_imageview"
+            android:src="@mipmap/debug_icon_1"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体彩社区"
+                android:id="@+id/list_item_8_title_tv"
+                android:layout_marginTop="10dp"
+                style="@style/text_size_15_text_color_2"
+                android:singleLine="true"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一年一度新彩票发售"
+                    android:id="@+id/list_item_8_info1_tv"
+                    android:layout_gravity="center_vertical"
+                    style="@style/text_size_14_text_color_4"
+                    android:singleLine="true"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView63"
+                        android:text="@string/comunity_info_0"
+                        style="@style/text_size_14_text_color_4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/list_item_8_info_tv"
+                        android:layout_toStartOf="@+id/list_item_8_info_tv"/>
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:id="@+id/list_item_8_info_tv"
+                        style="@style/text_size_11_text_color_9"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="visible"
+                        android:gravity="left"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

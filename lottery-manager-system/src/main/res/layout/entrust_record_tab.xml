@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/entrust_record_tab_listview_no">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="暂时没有数据！"
+                android:id="@+id/textView97"
+                android:gravity="center_vertical|center_horizontal"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none"
+            android:id="@+id/entrust_trecord_tab_scrollview">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.manager.widgets.MyListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/entrust_record_tab_listview"
+                    android:divider="@null"
+                    android:listSelector="@android:color/transparent"
+                    android:cacheColorHint="#00FFFFFF"
+                    android:scrollbars="none"
+                    android:layout_marginBottom="13dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/entrust_record_tab_tip_view"
+        android:visibility="gone">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/entrust_tip_layout1"
+            android:id="@+id/entrust_record_tab_tip_include"/>
+    </LinearLayout>
+
+</LinearLayout>

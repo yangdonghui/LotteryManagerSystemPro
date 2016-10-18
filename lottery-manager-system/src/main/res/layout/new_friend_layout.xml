@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/new_friend_rootview">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/new_friend_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_13">
+
+            <com.manager.view.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_friend_search_view"
+                app:hint_text="@string/contacts_info_hint"
+                app:type="3"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none"
+            android:id="@+id/new_friend_scrollview"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_friend_search_viewgroup"
+                    android:background="@color/bg_color_13"
+                    android:visibility="gone">
+
+                    <com.manager.widgets.MyListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/new_friend_search_listview"
+                        android:divider="@drawable/line_single_2"
+                        android:dividerHeight="1dp"
+                        android:listSelector="@android:color/transparent"
+                        android:cacheColorHint="#00FFFFFF"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/list_divider"
+                        android:visibility="visible"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_friend_history_viewgroup"
+                    android:background="@color/bg_color_13"
+                    android:visibility="visible">
+
+                    <com.manager.widgets.MyListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/new_friend_history_listview"
+                        android:divider="@drawable/line_single_2"
+                        android:dividerHeight="1dp"
+                        android:listSelector="@android:color/transparent"
+                        android:cacheColorHint="#00FFFFFF"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"
+                        android:visibility="visible"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/register_binding_bank_rootview">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/binding_bank_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/register_progress_layout"
+            android:id="@+id/binding_bank_progress_include"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="29dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_info3_1"
+                android:layout_gravity="center_horizontal"
+                style="@style/text_size_15_text_color_3"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rect_radius_1">
+
+                <TextView
+                    style="@style/text_size_15_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_info3_2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"/>
+
+                <EditText
+                    style="@style/text_size_15_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:ems="20"
+                    android:inputType="textPersonName"
+                    android:background="@null"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/register_hint_info3_1"
+                    android:textColorHint="@color/text_color_4"
+                    android:maxLength="@integer/edittext_maxlen"
+                    android:imeOptions="actionDone"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/binding_bank_edit1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rect_radius_1"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    style="@style/text_size_15_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_info3_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"/>
+
+                <EditText
+                    style="@style/text_size_15_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:ems="20"
+                    android:inputType="textPersonName"
+                    android:background="@null"
+                    android:layout_marginRight="20dp"
+                    android:hint="@string/register_hint_info3_2"
+                    android:textColorHint="@color/text_color_4"
+                    android:maxLength="@integer/edittext_maxlen"
+                    android:imeOptions="actionDone"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/binding_bank_edit2"/>
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/binding_bank_scan_btn"
+                    android:background="@null"
+                    android:src="@mipmap/login_register_nav_01"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/register_flag_icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/register_tip_str2"
+                    style="@style/text_size_12_text_color_3"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:text="@string/next_info_common_1"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/binding_bank_next_btn"
+                android:background="@drawable/rect_radius_14_3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:clickable="true"
+                style="@style/text_size_15_text_white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/register_info_common_2"
+                android:id="@+id/binding_bank_skip_btn"
+                android:layout_gravity="center_horizontal"
+                style="@style/text_size_12_text_color_4"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

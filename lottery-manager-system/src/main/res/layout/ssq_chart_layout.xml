@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/chart_item_header"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color_13"/>
+
+    <ListView
+        android:id="@+id/lottery_chart_scroll_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="#00FFFFFF"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:fillViewport="false"
+        android:scrollbars="none"
+        android:layout_weight="1">
+    </ListView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/text_color_13"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <include
+                layout="@layout/chart_select_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/text_size_14_text_color_17"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="已选"/>
+
+            <com.manager.widgets.MyGridView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lottery_chart_gridview1"
+                android:layout_marginLeft="2dp"
+                android:numColumns="auto_fit"
+                android:columnWidth="15dp"
+                android:stretchMode="spacingWidth"
+                android:verticalSpacing="3dp"
+                android:horizontalSpacing="3dp"
+                android:scrollbars="none"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="#00FFFFFF"
+                app:line_bmp="1"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距"
+                    style="@style/text_size_12_text_color_2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="171期"
+                    style="@style/text_size_12_text_color_2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="截止:"
+                    style="@style/text_size_12_text_color_2"/>
+
+                <TextView
+                    style="@style/text_size_12_text_color_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4小时26分"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="@string/betting_str9"
+                android:background="@drawable/rect_radius_14"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                style="@style/text_size_14_text_white"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

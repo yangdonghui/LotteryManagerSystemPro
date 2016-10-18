@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@color/bg_color_9">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/input_view_pic1"
+                android:background="@null"
+                android:src="@mipmap/nav_044"
+                android:clickable="true"
+                />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/input_view_pic2"
+                android:background="@null"
+                android:src="@mipmap/nav_033"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/input_view_editText"
+            android:layout_weight="1"
+            android:background="@drawable/rect_radius_18"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+
+            android:paddingLeft="10dp"
+            style="@style/text_size_14_text_color_3"
+            android:textColorHint="@color/text_color_4"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"/><!--android:hint="@string/chat_info_hint"-->
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="@string/chat_info_1"
+            android:id="@+id/input_view_send_btn"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            style="@style/text_size_14_text_color_3"
+            android:clickable="true"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

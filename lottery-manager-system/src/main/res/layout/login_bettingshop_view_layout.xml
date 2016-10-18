@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color_4"
+              android:id="@+id/login_bettingshop"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:id="@+id/bettingshop_login_view_back_btn">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/message_nav_return1"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backstr"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                style="@style/text_size_18_text_color_3"
+                android:layout_marginBottom="1dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView2"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/zd_login_bg_00"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-40dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/rect_radius_1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        style="@style/text_size_15_text_color_3"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:ems="20"
+                        android:id="@+id/editText_login_name_betting"
+                        android:inputType="textPersonName"
+                        android:background="@null"
+                        android:layout_marginRight="20dp"
+                        android:hint="@string/name_info1"
+                        android:textColorHint="@color/text_color_4"
+                        android:maxLength="@integer/edittext_maxlen"
+                        style="@style/text_size_15_text_color_3"
+                        android:imeOptions="actionDone"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/rect_radius_1"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/password"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        style="@style/text_size_15_text_color_3"/>
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:inputType="textPassword"
+                        android:ems="20"
+                        android:id="@+id/editText_login_pw_betting"
+                        android:layout_marginLeft="15dp"
+                        android:background="@null"
+                        android:hint="@string/pw_info"
+                        android:textColorHint="@color/text_color_4"
+                        android:maxLength="@integer/edittext_maxlen"
+                        style="@style/text_size_15_text_color_3"
+                        android:imeOptions="actionDone"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:text="@string/login"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/login_detail_login_btn_betting"
+                    android:background="@drawable/rect_radius_14_3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="25dp"
+                    android:clickable="true"
+                    android:layout_marginBottom="13dp"
+                    style="@style/text_size_15_text_white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forget_pw_str"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"
+                    style="@style/text_size_15_text_color_3"
+                    android:clickable="true"
+                    android:id="@+id/zd_forger_btn"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="@string/register_info"
+                    android:id="@+id/login_register_btn_betting"
+                    android:background="@drawable/rect_radius_5"
+                    style="@style/text_size_15_text_color_3"
+                    android:clickable="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="30dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

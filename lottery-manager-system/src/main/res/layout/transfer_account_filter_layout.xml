@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/transfer_account_filter_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <com.manager.widgets.MyGridView1
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/transfer_account_filter_gridview"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:numColumns="4"/>
+    </LinearLayout>
+</LinearLayout>

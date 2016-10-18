@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/topview_arrows_tv"
+            android:id="@+id/wallet_transferaccount_record_topview"/>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/wallet_transferaccount_record_btn"
+            android:clickable="true"
+            >
+
+            <TextView
+                style="@style/text_size_14_text_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_str_9"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_0"
+                    android:layout_marginTop="13dp"/>
+
+                <com.manager.widgets.MyListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wallet_transferaccount_record_listview"
+                    android:divider="@drawable/list_divider2"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@android:color/transparent"
+                    android:cacheColorHint="#00FFFFFF"
+                    android:scrollbars="none"
+                    android:background="@color/bg_color_13"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_0"
+                    android:layout_marginBottom="13dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/wallet_transferaccount_record_list_no"
+            android:background="@color/bg_color_4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="暂时没有数据！"
+                android:gravity="center_vertical|center_horizontal"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

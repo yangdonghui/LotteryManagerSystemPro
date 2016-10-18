@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/my_entrust_record_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <com.manager.view.TabCommonView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_entrust_record_tabview"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/my_entrust_record_tab_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:fillViewport="false"
+            android:overScrollMode="never"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@drawable/rect_radius_10_2"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="双色球"
+                style="@style/text_size_12_text_color_3"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/list_item_17_2_tv1"/>
+
+            <TextView
+                style="@style/text_size_12_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第2016089期"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/list_item_17_2_tv11"/>
+
+            <TextView
+                style="@style/text_size_12_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/textView6"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"/>
+
+            <TextView
+                style="@style/text_size_12_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单式"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/list_item_17_2_tv12"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="x2注"
+            style="@style/text_size_12_text_color_3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/list_item_17_2_tv2"
+            />
+
+        <TextView
+            style="@style/text_size_12_text_color_3"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="¥10"
+            android:layout_marginLeft="2dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/list_item_17_2_tv3"
+            android:visibility="visible"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_17_2_childview"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="visible"
+            />
+
+        <com.manager.widgets.MyListView1
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_17_2_listview"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="#00FFFFFF"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_item_17_2_childview1"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/line_single_0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"/>
+
+            <Button
+                style="@style/text_size_15_text_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="扫描彩票"
+                android:id="@+id/button"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect_radius_14"
+                android:clickable="true"
+                android:layout_marginBottom="20dp"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

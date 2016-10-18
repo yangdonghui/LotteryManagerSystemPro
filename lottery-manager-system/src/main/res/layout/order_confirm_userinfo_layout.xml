@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:background="@color/bg_color_7">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                style="@style/text_size_12_text_color_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bettingshop_info2"
+                android:id="@+id/order_confirm_userinfo_tv01"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                style="@style/text_size_12_text_color_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456789"
+                android:id="@+id/order_confirm_userinfo_tv11"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/order_confirm_userinfo_tv01"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                style="@style/text_size_12_text_color_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bettingshop_info1"
+                android:id="@+id/order_confirm_userinfo_tv02"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                style="@style/text_size_12_text_color_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李四"
+                android:id="@+id/order_confirm_userinfo_tv12"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/order_confirm_userinfo_tv02"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    style="@style/text_size_14_text_color_3"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/order_confirm_userinfo_tv1"/>
+
+                <TextView
+                    style="@style/text_size_14_text_color_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="18701265806"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/order_confirm_userinfo_tv2"
+                    android:singleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_manager_item_0"
+                    android:layout_gravity="center_vertical"
+                    style="@style/text_size_14_text_color_3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/debug_str_15"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    style="@style/text_size_14_text_color_3"
+                    android:id="@+id/order_confirm_userinfo_tv3"
+                    android:singleLine="true"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center_vertical|center_horizontal"
+            android:src="@mipmap/message_nav_return2"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        />
+
+</LinearLayout>

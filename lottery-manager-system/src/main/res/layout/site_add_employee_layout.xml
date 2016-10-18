@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/site_add_employee_rootview">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/site_add_employee_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="13dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"
+                        />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@color/bg_color_7">
+
+                        <TextView
+                            style="@style/text_size_14_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/username"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                        <TextView
+                            style="@style/text_size_15_text_color_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="38dp"
+                            android:text="123456_1"
+                            android:gravity="center_vertical"
+                            android:id="@+id/site_add_employee_username_tv"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="13dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bg_color_7">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/setting_info_10"
+                                android:layout_gravity="center_vertical"
+                                />
+
+                            <EditText
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="38dp"
+                                android:gravity="center_vertical"
+                                android:background="@null"
+                                android:textColorHint="@color/text_color_4"
+                                android:hint="@string/setting_info_23"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:clickable="true"
+                                android:singleLine="true"
+                                android:id="@+id/site_add_employee_edit1"
+                                android:inputType="textCapCharacters"
+                                android:imeOptions="actionDone"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@drawable/line_single_0"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/setting_info_11"
+                                android:layout_gravity="center_vertical"/>
+
+                            <TextView
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="38dp"
+                                android:drawableRight="@mipmap/message_nav_return2"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:hint="@string/setting_info_24"
+                                android:textColorHint="@color/text_color_4"
+                                android:editable="false"
+                                android:clickable="true"
+                                android:singleLine="true"
+                                android:id="@+id/site_add_employee_tv1"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@drawable/line_single_0"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="5dp">
+
+                            <TextView
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/setting_info_12"
+                                android:layout_gravity="center_vertical"/>
+
+                            <EditText
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="11dp"
+                                android:gravity="center_vertical"
+                                android:hint="@string/setting_info_18"
+                                android:background="@null"
+                                android:textColorHint="@color/text_color_4"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                android:clickable="true"
+                                android:inputType="text|textCapCharacters"
+                                android:singleLine="true"
+                                android:id="@+id/site_add_employee_edit2"/>
+
+                            <ImageButton
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/site_add_employee_scan_btn"
+                                android:background="@null"
+                                android:src="@mipmap/login_register_nav_01"
+                                android:layout_gravity="right"
+                                android:clickable="true"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@drawable/line_single_0"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/setting_info_2"
+                                android:layout_gravity="center_vertical"/>
+
+                            <EditText
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical"
+                                android:hint="@string/setting_info_5"
+                                android:background="@null"
+                                android:textColorHint="@color/text_color_4"
+                                android:focusable="false"
+                                android:clickable="true"
+                                android:inputType="phone"
+                                android:singleLine="true"
+                                android:id="@+id/site_add_employee_edit3"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="13dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bg_color_7">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/setting_info_25"
+                                android:layout_gravity="center_vertical"/>
+
+                            <EditText
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="11dp"
+                                android:gravity="center_vertical"
+                                android:background="@null"
+                                android:textColorHint="@color/text_color_4"
+                                android:hint="@string/setting_info_27"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:inputType="textPassword"
+                                android:singleLine="true"
+                                android:id="@+id/site_add_employee_edit4"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@drawable/line_single_0"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/password_confirm"
+                                android:layout_gravity="center_vertical"/>
+
+                            <EditText
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="11dp"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:hint="@string/user_hint_info2"
+                                android:textColorHint="@color/text_color_4"
+                                android:editable="false"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:inputType="textPassword"
+                                android:singleLine="true"
+                                android:id="@+id/site_add_employee_edit5"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@drawable/line_single_0"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                style="@style/text_size_14_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/setting_info_26"
+                                android:layout_gravity="center_vertical"/>
+
+                            <TextView
+                                style="@style/text_size_14_text_color_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="11dp"
+                                android:gravity="center_vertical"
+                                android:hint="@string/setting_info_18"
+                                android:background="@null"
+                                android:textColorHint="@color/text_color_4"
+                                android:drawableRight="@mipmap/message_nav_return2"
+                                android:text="启用"
+                                android:clickable="true"
+                                android:id="@+id/site_add_employee_tv2"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            style="@style/text_size_15_text_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_info_btn3"
+            android:id="@+id/site_add_employee_btn"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rect_radius_14"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>

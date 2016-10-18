@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:id="@+id/list_item_5_icon_imageview"
+        android:src="@drawable/lottery_city_nav_03"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_str_5"
+            android:id="@+id/list_item_5_title_textview"
+            style="@style/text_size_15_text_color_3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lottery_city_info2"
+                android:id="@+id/textView36"
+                android:layout_gravity="center_vertical"
+                style="@style/text_size_11_text_color_3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2145"
+                android:id="@+id/list_item_5_num_textview1"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                style="@style/text_size_11_text_color_9"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lottery_city_info3"
+                android:id="@+id/textView39"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                style="@style/text_size_11_text_color_3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4145"
+                android:id="@+id/list_item_5_num_textview2"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                style="@style/text_size_11_text_color_9"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="18dp"
+        android:text="@string/lottery_city_info4"
+        android:id="@+id/list_item_5_btn"
+        style="@style/text_size_11_text_color_3"
+        android:background="@drawable/rect_radius_19"
+        android:clickable="true"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical|center_horizontal"/>
+
+</LinearLayout>

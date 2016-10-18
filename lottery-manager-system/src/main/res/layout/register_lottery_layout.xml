@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/register_lottery_rootview">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/register_lottery_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginBottom="29dp">
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/register_progress_layout"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_info1_3"
+                        android:id="@+id/textView43"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/text_size_15_text_color_3"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/rect_radius_1">
+
+                        <TextView
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/username"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"/>
+
+                        <EditText
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="42dp"
+                            android:layout_weight="1"
+                            android:ems="20"
+                            android:id="@+id/register_lottery_edit1"
+                            android:inputType="textPersonName"
+                            android:background="@null"
+                            android:layout_marginRight="20dp"
+                            android:hint="@string/user_hint_info"
+                            android:textColorHint="@color/text_color_4"
+                            android:maxLength="@integer/edittext_maxlen"
+                            android:imeOptions="actionDone"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/rect_radius_1"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/password"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"/>
+
+                        <EditText
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="42dp"
+                            android:layout_weight="1"
+                            android:ems="20"
+                            android:id="@+id/register_lottery_edit2"
+                            android:background="@null"
+                            android:layout_marginRight="20dp"
+                            android:hint="@string/user_hint_info"
+                            android:textColorHint="@color/text_color_4"
+                            android:maxLength="@integer/edittext_maxlen"
+                            android:imeOptions="actionDone"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:inputType="textPassword"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/rect_radius_1"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/password_confirm"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"/>
+
+                        <EditText
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:ems="20"
+                            android:id="@+id/register_lottery_edit3"
+                            android:background="@null"
+                            android:layout_marginRight="20dp"
+                            android:hint="@string/user_hint_info2"
+                            android:textColorHint="@color/text_color_4"
+                            android:maxLength="@integer/edittext_maxlen"
+                            android:imeOptions="actionDone"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:inputType="textPassword"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/rect_radius_1"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setting_info_3"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"/>
+
+                        <EditText
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:ems="11"
+                            android:id="@+id/register_lottery_edit4"
+                            android:background="@null"
+                            android:layout_marginRight="20dp"
+                            android:hint="@string/user_hint_info3"
+                            android:textColorHint="@color/text_color_4"
+                            android:imeOptions="actionDone"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:inputType="number|textPhonetic|numberSigned"
+                            android:digits="1234567890"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="200dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/rect_radius_1"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/text_size_15_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/setting_info_4"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/textView45"
+                                android:layout_marginLeft="15dp"/>
+
+                            <EditText
+                                style="@style/text_size_15_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:ems="20"
+                                android:id="@+id/register_lottery_edit5"
+                                android:inputType="number|numberSigned"
+                                android:background="@null"
+                                android:hint="@string/setting_info_6"
+                                android:textColorHint="@color/text_color_4"
+                                android:imeOptions="actionDone"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:layout_marginLeft="26dp"
+                                android:singleLine="true"
+                                android:digits="1234567890"/>
+                        </LinearLayout>
+
+                        <com.manager.widgets.TimeButton
+                            android:layout_width="102dp"
+                            android:layout_height="45dp"
+                            android:text="@string/setting_info_btn0"
+                            android:id="@+id/register_lottery_verificationcode_btn"
+                            android:visibility="visible"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/rect_radius_8"
+                            style="@style/text_size_14_text_white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:text="@string/register"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/register_lottery_ok_btn"
+                    android:background="@drawable/rect_radius_14_3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="25dp"
+                    android:clickable="true"
+                    android:layout_marginBottom="13dp"
+                    style="@style/text_size_15_text_white"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="30dp"
+                    >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/register_info1_1"
+                        android:id="@+id/register_lottery_checkBox"
+                        android:singleLine="false"
+                        style="@style/text_size_12_text_color_4"
+                        android:checked="true"
+                        android:button="@drawable/check_items"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/register_info1_2"
+                        android:id="@+id/register_lottery_info_btn"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        style="@style/text_size_12_text_color_9"
+                        android:paddingTop="2dp"
+                        android:layout_marginLeft="5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

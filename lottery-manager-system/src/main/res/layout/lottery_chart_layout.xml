@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/topview_arrows_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lottery_chart_toview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.manager.view.TabCommonView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lottery_chart_tabview"/>
+
+        <com.manager.widgets.IndexViewPager
+            android:id="@+id/lottery_chart_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:fillViewport="false"
+            android:overScrollMode="never"/>
+
+
+    </LinearLayout>
+</LinearLayout>

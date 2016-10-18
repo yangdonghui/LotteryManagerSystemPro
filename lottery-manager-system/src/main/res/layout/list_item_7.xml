@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/bg_color_13">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_str_6"
+            android:id="@+id/list_item_7_qihao_tv"
+            android:layout_centerVertical="true"
+            style="@style/text_size_12_text_color_3"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_str_7"
+            android:id="@+id/list_item_7_time_tv"
+            android:layout_centerVertical="true"
+            style="@style/text_size_12_text_color_3"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/list_item_7_viewGroup"
+            android:layout_centerVertical="true"
+            android:baselineAligned="false"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:src="@mipmap/login_btn_00"
+                android:background="@null"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_7_detail"
+        android:minHeight="350dp"
+        android:visibility="visible"
+        android:tag="0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/line_single_0"
+                android:id="@+id/imageView83"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <com.manager.view.LotteryInfoChildView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view3"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

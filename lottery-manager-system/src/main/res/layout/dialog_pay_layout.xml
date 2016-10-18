@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="30dp"
+                  android:layout_centerInParent="true"
+                  android:background="@drawable/rect_radius_1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:id="@+id/pay_dialog_close_btn"
+                android:src="@mipmap/dialog_close_icon"
+                android:background="@null"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_str_21"
+                android:visibility="visible"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                style="@style/text_size_14_text_color_2"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_0"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充值"
+                    style="@style/text_size_15_text_color_3"
+                    android:id="@+id/doalog_pay_tv1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/text_size_24_text_color_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/money_str"
+                    android:visibility="visible"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    style="@style/text_size_24_text_color_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.00"
+                    android:visibility="visible"
+                    android:id="@+id/doalog_pay_tv2"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_pay_way_view"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/line_single_0"
+                />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/list_item_21"
+                android:id="@+id/dialog_pay_way_include"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/line_single_0"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:id="@+id/pay_password_view"
+            android:layout_gravity="center">
+
+
+            <com.manager.widgets.SecurityPasswordEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialog_pay_pass_edit"
+                android:focusable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

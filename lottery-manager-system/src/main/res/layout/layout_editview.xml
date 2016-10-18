@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editTextBodyLl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/bg_color_21"
+    android:orientation="horizontal"
+              android:paddingLeft="20dp"
+              android:paddingBottom="8dp"
+              android:paddingRight="10dp"
+              android:paddingTop="8dp"
+              android:visibility="gone">
+    <EditText
+        android:id="@+id/circleEt"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/rect_radius_18"
+        android:layout_weight="1"
+        android:hint="说点什么..."
+        style="@style/text_size_12_text_color_20"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:imeOptions="actionSend"/>
+    <ImageView
+        android:id="@+id/sendIv"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:src="@mipmap/nav_033"
+        android:layout_marginLeft="5dp"/>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_size_14_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/setting_info_3"/>
+
+            <EditText
+                android:id="@+id/modify_phone_no_number_editText"
+                style="@style/text_size_14_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/setting_info_5"
+                android:textColorHint="@color/text_color_4"
+                android:inputType="phone"
+                android:imeOptions="actionDone"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/line_single_1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_size_14_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/setting_info_4"/>
+
+            <EditText
+                android:id="@+id/modify_phone_no_yanzheng_editText"
+                style="@style/text_size_14_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/setting_info_6"
+                android:textColorHint="@color/text_color_4"
+                android:inputType="number"
+                android:imeOptions="actionDone"/>
+
+            <Button
+                android:id="@+id/modify_phone_no_yanzheng_button"
+                style="@style/text_size_14_text_color_3"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rect_radius_18"
+                android:clickable="true"
+                android:text="@string/setting_info_btn0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        />
+
+    <Button
+        android:id="@+id/modify_phoneno_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_info_btn1"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        style="@style/text_size_15_text_white"
+        android:background="@drawable/rect_radius_14"
+        android:clickable="true"/>
+</LinearLayout>

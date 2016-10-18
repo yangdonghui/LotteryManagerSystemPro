@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/lottery_introduce_itemicon"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/list_item_30_icon"/>
+
+        <TextView
+            style="@style/text_size_12_text_color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="总则"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/list_item_30_tv1"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/debug_str_22"
+        android:id="@+id/list_item_30_tv2"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        style="@style/text_size_12_text_color_21"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="25dp"/>
+
+</LinearLayout>

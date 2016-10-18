@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/bettingshop_entrust_recodr_detail_topview"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_7"
+            android:id="@+id/bettingshop_entrust_recodr_detail_view1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/line_single_0"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/text_size_12_text_color_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_info_str1"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        style="@style/text_size_12_text_color_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-06-11-1111"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/betting_entrust_record_detail_tv1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        style="@style/text_size_12_text_color_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/betting_str16"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        style="@style/text_size_12_text_color_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="02:20"
+                        android:id="@+id/betting_entrust_record_detail_tv2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="2dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016/06/11 15:20"
+                    style="@style/text_size_12_text_color_4"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_size_12_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/betting_str15"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    style="@style/text_size_12_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="彩民123"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/betting_entrust_record_detail_tv3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    style="@style/text_size_12_text_color_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18701265806"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/betting_entrust_record_detail_tv4"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/line_single_0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/bettingshop_entrust_recodr_detail_view2"
+            android:layout_below="@+id/bettingshop_entrust_recodr_detail_view1">
+
+            <TextView
+                style="@style/text_size_12_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="彩票共"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                style="@style/text_size_18_text_color_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                style="@style/text_size_12_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张， 共扫描"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                style="@style/text_size_18_text_color_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                style="@style/text_size_12_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bettingshop_entrust_recodr_detail_view3"
+            android:layout_below="@+id/bettingshop_entrust_recodr_detail_view2"
+            android:layout_above="@+id/bettingshop_entrust_recodr_detail_view4">
+
+            <com.stone.card.CardSlidePanel
+                android:id="@+id/image_slide_panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card:bottomMarginTop="10dp"
+                card:itemMarginTop="0dp"
+                card:yOffsetStep="20dp">
+
+                <!--<com.stone.card.CardItemView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <com.stone.card.CardItemView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <com.stone.card.CardItemView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <com.stone.card.CardItemView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <com.stone.card.CardItemView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>-->
+
+
+            </com.stone.card.CardSlidePanel>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/bettingshop_entrust_recodr_detail_view4"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/line_single_0"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right">
+
+                <TextView
+                    style="@style/text_size_12_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单总金额:"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/bettingshop_entrust_total_price_tv"/>
+
+                <TextView
+                    style="@style/text_size_15_text_bg_color_19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥10"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/bettingshop_entrust_total_price_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

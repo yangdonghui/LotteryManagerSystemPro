@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/search_product_topview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_color_26">
+
+        <com.manager.view.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_product_searchview"
+            android:layout_weight="1"
+            app:hint_text="@string/lottery_city_info23"
+            app:type="2"
+            app:cancel_btn="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="筛选关键字"
+                android:id="@+id/search_product_tv"
+                android:layout_gravity="center_horizontal"
+                style="@style/text_size_16_text_color_1"/>
+
+            <com.manager.widgets.MyListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/search_product_listview"
+                android:layout_marginTop="15dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="#00FFFFFF"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

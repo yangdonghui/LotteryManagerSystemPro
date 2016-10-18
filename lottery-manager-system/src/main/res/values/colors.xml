@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_no_photo">#EEEEEE</color>
+
+    <color name="province_line_border">#C7C7C7</color>
+
+    <!-- 线条颜色 -->
+    <color name="view_line">#999999</color>
+    <color name="view_line_0">#AEA18E</color>
+    <color name="view_line_1">#B5A386</color>
+    <color name="view_line_2">#CEC3B2</color>
+    <color name="view_line_3">#C30D23</color>
+    <color name="view_line_4">#60D4BC99</color>
+    <color name="view_line_5">#809D8D6F</color>
+    <color name="view_line_6">#40D4BC99</color>
+    <color name="view_line_7">#9E9E9F</color>
+    <color name="view_line_8">#DDCCB1</color>
+
+
+    <!-- 索引栏的颜色 -->
+    <color name="sidebar_bg_color">#262935</color>
+
+
+    <!-- 字体颜色 -->
+    <color name="text_color_0">#990000</color>
+    <color name="text_color_1">#3F210E</color>
+    <color name="text_color_2">#333333</color>
+    <color name="text_color_3">#9D8D6F</color>
+    <color name="text_color_4">#CEC3B2</color>
+    <color name="text_color_5">#D4BC99</color>
+    <color name="text_color_6">#A08F71</color>
+    <color name="text_color_7">#FFB400</color>
+    <color name="text_color_8">#BAA88C</color>
+    <color name="text_color_9">#FD6661</color>
+    <color name="text_color_91">#E0FD6661</color>
+    <color name="text_color_10">#C30D23</color>
+    <color name="text_color_11">#595757</color>
+    <color name="text_color_12">#3E3A39</color>
+    <color name="text_color_13">#403E3A39</color>
+    <color name="text_color_14">#5BBDB3</color>
+    <color name="text_color_15">#9A8B6E</color>
+    <color name="text_color_16">#BF902D</color><!--433523-->
+    <color name="text_color_17">#A38A77</color>
+    <color name="text_color_18">#7B6B4E</color>
+    <color name="text_color_19">#CBC8C3</color>
+    <color name="text_color_20">#24282D</color>
+    <color name="text_color_21">#424347</color>
+
+
+    <!-- 背景颜色 -->
+    <color name="transparent">#A0000000</color>
+    <color name="bg_color_0">#393A3A</color>
+    <color name="bg_color_1">#F6F6F6</color>
+    <color name="bg_color_2">#433624</color>
+    <color name="bg_color_3">#C6952B</color>
+    <color name="bg_color_4">#EEE8DA</color>
+    <color name="bg_color_5">#FFFBF3</color>
+    <color name="bg_color_6">#00A199</color>
+    <color name="bg_color_7">#F9F6F1</color>
+    <color name="bg_color_8">#666666</color>
+    <color name="bg_color_9">#FCFAF7</color>
+    <color name="bg_color_10">#FCF7ED</color>
+    <color name="bg_color_11">#C40E25</color>
+    <color name="bg_color_12">#046EB8</color>
+    <color name="bg_color_13">#FFFBF3</color>
+    <color name="bg_color_14">#F4F4F4</color>
+    <color name="bg_color_15">#EEEEEF</color>
+    <color name="bg_color_16">#EDE6DF</color>
+    <color name="bg_color_17">#FFF7E9</color>
+
+    <color name="bg_color_18">#3399CC</color>
+    <color name="bg_color_19">#FF6666</color>
+    <color name="bg_color_20">#009999</color>
+
+    <color name="bg_color_21">#DBDCDC</color>
+    <color name="bg_color_211">#A0DBDCDC</color>
+
+    <color name="bg_color_22">#AD3D36</color>
+    <color name="bg_color_23">#E57E4D</color>
+    <color name="bg_color_24">#80C3DA</color>
+    <color name="bg_color_25">#9B8F7F</color>
+    <color name="bg_color_26">#60C1AD91</color><!--20C1AD91-->
+    <color name="bg_color_27">#F5F1E8</color>
+    <color name="bg_color_28">#FF3333</color>
+    <color name="bg_color_29">#C8BB9B</color>
+
+    <color name="bg_color_30">#ECE6D7</color>
+
+    <!--========================-->
+    <color name="color_8290AF">#8290AF</color>
+    <color name="color_232323">#232323</color>
+
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="name_selector_color">#cccccc</color>
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <color name="praise_item">#8290AF</color>
+    <color name="default_clickable_color">#cccccc</color>
+    <color name="video_bg">#ededed</color>
+
+    <!-- 副本 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+</resources>

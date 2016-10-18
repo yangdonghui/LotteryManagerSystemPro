@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal"
+              android:background="@drawable/rect_radius_1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:id="@+id/list_item_25_icon_imgv"
+            android:src="@drawable/lottery_info_nav_01"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="双色球"
+            android:id="@+id/list_item_25_name_tv"
+            style="@style/text_size_12_text_color_3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/list_item_25_view1"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lottery_city_tools_nav_9"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lottery_city_info20"
+                style="@style/text_size_12_text_color_3"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/list_item_25_view2"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lottery_city_tools_nav_10"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lottery_city_info21"
+                style="@style/text_size_12_text_color_3"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/list_item_25_view3"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lottery_city_tools_nav_11"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lottery_city_info22"
+                style="@style/text_size_12_text_color_3"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

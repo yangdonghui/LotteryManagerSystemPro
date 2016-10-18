@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/bg_color_13">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/list_item_24_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible"
+                android:text="张三"
+                style="@style/text_size_12_text_color_2"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            >
+
+            <TextView
+                style="@style/text_size_12_text_color_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_info_15"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                style="@style/text_size_12_text_color_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/colon_str"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_24_address_tv"
+                style="@style/text_size_12_text_color_4"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:maxLines="@integer/num_maxlen"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/text_size_12_text_color_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manager_str_16"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                style="@style/text_size_12_text_color_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/colon_str"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"/>
+
+            <TextView
+                style="@style/text_size_12_text_color_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_24_phone_tv"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/wallet_withdraw_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_1"
+            android:layout_marginTop="13dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_7">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wallet_str_14"
+                    style="@style/text_size_14_text_color_11"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工商银行(4021)"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/wallet_withdraw_tv1"
+                    style="@style/text_size_14_text_color_11"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/line_single_1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wallet_str_12"
+                        android:layout_gravity="center_vertical"
+                        style="@style/text_size_14_text_color_11"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/text_size_18_text_color_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/money_str"
+                        android:layout_below="@+id/textView80"/>
+
+                    <EditText
+                        style="@style/text_size_28_text_color_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|numberSigned"
+                        android:background="@null"
+                        android:hint="0.00"
+                        android:textColorHint="@color/text_color_4"
+                        android:imeOptions="actionDone"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:id="@+id/wallet_withdraw_edit"
+                        android:digits="1234567890."
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/line_single_1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/wallet_withdraw_tv1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    style="@style/text_size_14_text_color_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wallet_str_8"
+                    android:layout_below="@+id/wallet_withdraw_tv1"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    style="@style/text_size_14_text_color_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/money_str"
+                    android:layout_below="@+id/textView80"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    style="@style/text_size_14_text_color_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000"
+                    android:layout_below="@+id/wallet_withdraw_tv1"
+                    android:id="@+id/wallet_withdraw_tv2"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_1"
+            />
+
+        <TextView
+            style="@style/text_size_14_text_color_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wallet_str_22"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            style="@style/text_size_14_text_white"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/wallet_str_15"
+            android:id="@+id/wallet_withdraw_next_btn"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect_radius_14_2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+</LinearLayout>

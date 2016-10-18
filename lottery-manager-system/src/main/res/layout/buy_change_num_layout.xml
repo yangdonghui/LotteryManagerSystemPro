@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buy_change_sub_btn"
+        android:background="@null"
+        android:src="@mipmap/buy_nav_05"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"/>
+
+    <EditText
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:id="@+id/buy_change_num_tv"
+        style="@style/text_size_15_text_color_10"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:text="1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buy_change_add_btn"
+        android:background="@null"
+        android:src="@mipmap/buy_nav_04"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"/>
+</LinearLayout>

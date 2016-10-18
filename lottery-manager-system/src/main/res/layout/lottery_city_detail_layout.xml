@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/lottery_city_detail_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_9">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/text_size_16_text_color_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="标题:"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/textView38"
+                        android:lineSpacingExtra="5dp"/>
+
+                    <TextView
+                        style="@style/text_size_16_text_color_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="体彩评说"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/lottery_city_detail_title_tv"
+                        android:lineSpacingExtra="5dp"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp">
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/text_size_11_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lottery_city_info2"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            style="@style/text_size_11_text_color_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2145"
+                            android:id="@+id/lottery_city_detail_num1_tv"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            style="@style/text_size_11_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lottery_city_info3"
+                            android:layout_marginLeft="30dp"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            style="@style/text_size_11_text_color_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4145"
+                            android:id="@+id/lottery_city_detail_num2_tv"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/text_size_11_text_color_3"
+                        android:layout_width="45dp"
+                        android:layout_height="18dp"
+                        android:text="@string/lottery_city_info4"
+                        android:id="@+id/button2"
+                        android:background="@drawable/rect_radius_19"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/lottery_city_detail_icon_img"
+                    android:src="@drawable/lottery_city_nav_09"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/debug_str_1"
+                    android:id="@+id/lottery_city_detail_content_tv"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    style="@style/text_size_15_text_color_3"
+                    android:layout_marginBottom="60dp"
+                    android:lineSpacingExtra="5dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text_size_12_text_color_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布日期:"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016年1月20日"
+                        android:id="@+id/lottery_city_detail_info_tv"
+                        style="@style/text_size_12_text_color_4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

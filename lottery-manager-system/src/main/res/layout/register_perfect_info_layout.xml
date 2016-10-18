@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/register_perfect_rootview">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/register_perfect_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginBottom="29dp">
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/register_progress_layout"
+                        android:id="@+id/register_perfect_progress_include"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_info2_1"
+                        android:layout_gravity="center_horizontal"
+                        style="@style/text_size_15_text_color_3"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/rect_radius_1">
+
+                        <TextView
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setting_info_10"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"/>
+
+                        <EditText
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:ems="20"
+                            android:id="@+id/register_perfect_edit1"
+                            android:inputType="textPersonName"
+                            android:background="@null"
+                            android:layout_marginRight="20dp"
+                            android:hint="@string/register_hint_info2_1"
+                            android:textColorHint="@color/text_color_4"
+                            android:maxLength="@integer/edittext_maxlen"
+                            android:imeOptions="actionDone"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/rect_radius_1"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setting_info_12"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"/>
+
+                        <EditText
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:ems="20"
+                            android:id="@+id/register_perfect_edit2"
+                            android:inputType="textPersonName"
+                            android:background="@null"
+                            android:layout_marginRight="20dp"
+                            android:hint="@string/setting_info_18"
+                            android:textColorHint="@color/text_color_4"
+                            android:maxLength="@integer/edittext_maxlen"
+                            android:imeOptions="actionDone"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"/>
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/register_perfect_identity_scan_btn"
+                            android:background="@null"
+                            android:src="@mipmap/login_register_nav_01"
+                            android:clickable="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/rect_radius_1"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/setting_info_14"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"/>
+
+                        <EditText
+                            style="@style/text_size_15_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:ems="20"
+                            android:id="@+id/register_perfect_edit3"
+                            android:inputType="textPersonName"
+                            android:background="@null"
+                            android:layout_marginRight="20dp"
+                            android:hint="@string/setting_info_20"
+                            android:textColorHint="@color/text_color_4"
+                            android:maxLength="@integer/edittext_maxlen"
+                            android:imeOptions="actionDone"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/register_flag_icon"
+                            android:layout_marginTop="2dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/register_tip_str1"
+                            style="@style/text_size_12_text_color_3"
+                            android:lineSpacingExtra="5dp"
+                            android:inputType="textMultiLine"
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="top"
+                            android:gravity="top"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    style="@style/text_size_15_text_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:text="@string/next_info_common_1"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/register_perfect_btn1"
+                    android:background="@drawable/rect_radius_14_3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:layout_marginTop="115dp"/>
+
+                <TextView
+                    style="@style/text_size_12_text_color_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/register_info_common_2"
+                    android:id="@+id/register_perfect_btn2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="5dp"
+                    android:clickable="true"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

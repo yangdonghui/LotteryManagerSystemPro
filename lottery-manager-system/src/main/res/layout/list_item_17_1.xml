@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/bg_color_13">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/list_item_17_1_checkbox_view">
+
+            <CheckBox
+                style="@style/text_size_15_text_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_17_1_checkbox"
+                android:clickable="false"
+                android:checked="true"
+                android:button="@drawable/pay_way_check"
+                android:enabled="false"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="双色球"
+            android:layout_weight="1"
+            style="@style/text_size_12_text_color_3"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/list_item_17_1_tv1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-06-12 15:10"
+            style="@style/text_size_12_text_color_3"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/list_item_17_1_tv2"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_17">
+
+        <com.manager.widgets.MyListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_item_17_1_listview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:divider="@drawable/line_single_1"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="#00FFFFFF"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+
+</LinearLayout>

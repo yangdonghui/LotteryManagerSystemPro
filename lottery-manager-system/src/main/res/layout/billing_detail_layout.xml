@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/billing_detail_rootview"
+              android:background="@color/bg_color_4">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/billing_detail_topview"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:fillViewport="false"
+                android:scrollbars="none"
+                android:layout_marginBottom="50dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/rect_radius_24"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/billing_detail_icon_imgv"
+                            android:src="@drawable/billing_nav_07"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/rect_radius_24"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="13dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lottery_city_info6"
+                            android:id="@+id/textView96"
+                            style="@style/text_size_11_text_color_4"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@drawable/line_single_0"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/text_size_15_text_color_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="体彩灌篮高手"
+                                android:id="@+id/billing_detail_tv1"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"/>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    style="@style/text_size_16_text_color_10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="600元"
+                                    android:id="@+id/billing_detail_tv2"/>
+
+                                <TextView
+                                    style="@style/text_size_10_text_color_10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="/本"
+                                    android:id="@+id/textView86"/>
+
+                                <TextView
+                                    style="@style/text_size_12_text_color_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="剩余20本"
+                                    android:id="@+id/billing_detail_tv3"
+                                    android:layout_marginLeft="10dp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom">
+
+                            <Button
+                                android:layout_width="80dp"
+                                android:layout_height="20dp"
+                                android:text="@string/billing_btn_str3"
+                                android:background="@drawable/rect_radius_8"
+                                style="@style/text_size_12_text_white"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/billing_detail_buy_btn"
+                                android:visibility="gone"/>
+
+                            <com.manager.view.ChangeBuyNumView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/billing_detail_changeview"
+                                app:initNum="0"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lottery_city_info7"
+                                android:id="@+id/textView88"
+                                android:layout_gravity="center_vertical"
+                                style="@style/text_size_14_text_color_3"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="100万"
+                                android:id="@+id/billing_detail_tv4"
+                                android:layout_gravity="center_vertical"
+                                style="@style/text_size_21_text_color_10"
+                                android:layout_marginLeft="5dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lottery_city_info8"
+                                android:id="@+id/textView90"
+                                android:layout_gravity="center"
+                                style="@style/text_size_14_text_color_3"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12次"
+                                android:id="@+id/billing_detail_tv5"
+                                android:layout_gravity="center"
+                                style="@style/text_size_21_text_color_10"
+                                android:layout_marginLeft="5dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.manager.view.LineTextLineView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:title_text="@string/lottery_city_info9"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="游戏名称: 龙腾盛世"
+                            android:id="@+id/billing_detail_tv61"
+                            style="@style/text_size_12_text_color_4"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发行日期: 2015-0512"
+                            android:id="@+id/billing_detail_tv62"
+                            style="@style/text_size_12_text_color_4"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="面值: 20元"
+                            android:id="@+id/billing_detail_tv63"
+                            style="@style/text_size_12_text_color_4"
+                            android:layout_marginTop="10dp"/>
+                    </LinearLayout>
+
+                    <com.manager.view.LineTextLineView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:title_text="@string/lottery_city_info10"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        style="@style/text_size_12_text_color_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/debug_str_14"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/billing_detail_tv71"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <com.manager.view.CartTipView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/billing_detail_cart_view_include"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

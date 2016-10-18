@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/wallet_paying_rootview">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/wallet_paying_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/white"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pay_nav_221"
+                    android:id="@+id/wallet_paying_imgv1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/wallet_paying_imgv2"
+                    android:src="@drawable/pay_nav_222"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <com.manager.view.PaymentWayTipView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/wallet_paying_pay_way_tip_view"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_str_26"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_centerInParent="true"
+                style="@style/text_size_12_text_color_11"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

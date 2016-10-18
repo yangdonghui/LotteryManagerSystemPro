@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- tab view -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="bottom"
+              android:clickable="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:id="@+id/home_tab">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_title"
+                android:id="@+id/radioButton1"
+                android:drawableTop="@drawable/icon_home_tab"
+                android:checked="true"
+                android:clickable="false"
+                style="@style/main_tab"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view_line_0"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@color/bg_color_0"
+            android:id="@+id/community_tab">
+
+            <RadioButton
+                style="@style/main_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comunity_title"
+                android:id="@+id/radioButton2"
+                android:drawableTop="@drawable/icon_community_tab"
+                android:clickable="false"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_color_0"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@color/bg_color_0"
+            android:id="@+id/lottery_tab">
+
+            <RadioButton
+                style="@style/main_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lotterycity_title"
+                android:id="@+id/radioButton4"
+                android:drawableTop="@drawable/icon_lotterycity_tab"
+                android:clickable="false"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_color_0"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@color/bg_color_0"
+            android:id="@+id/me_tab">
+
+            <RadioButton
+                style="@style/main_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/me_title"
+                android:id="@+id/radioButton5"
+                android:drawableTop="@drawable/icon_me_tab"
+                android:clickable="false"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_color_0"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

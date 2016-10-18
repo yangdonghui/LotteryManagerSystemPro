@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color_4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_info"
+        android:id="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        style="@style/text_size_14_text_color_3"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView6"
+                android:src="@mipmap/login_icon_common"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/identity_info"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal"
+                style="@style/text_size_18_text_color_3"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/rect_radius_6"
+                android:layout_gravity="bottom|center_horizontal"
+                android:id="@+id/identity_bg_view_0"
+                android:clickable="true"
+                android:tag="0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/login_icon_cm"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identity_type_0"
+                    android:layout_gravity="center|right"
+                    android:layout_alignParentRight="false"
+                    style="@style/text_size_14_text_color_3"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/rect_radius_6"
+                android:layout_gravity="bottom|center_horizontal"
+                android:id="@+id/identity_bg_view_1"
+                android:clickable="true"
+                android:tag="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/login_icon_zd"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identity_type_1"
+                    style="@style/text_size_14_text_color_3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/rect_radius_6"
+                android:layout_gravity="bottom|center_horizontal"
+                android:id="@+id/identity_bg_view_2"
+                android:clickable="true"
+                android:tag="2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/login_icon_gul"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identity_type_2"
+                    android:layout_gravity="center"
+                    style="@style/text_size_14_text_color_3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

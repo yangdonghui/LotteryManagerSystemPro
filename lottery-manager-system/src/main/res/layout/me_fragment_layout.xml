@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_6">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/message_bg_00"
+            android:scaleType="fitXY"/>
+
+        <com.manager.widgets.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/default_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/me_headicon_img"
+            app:border_width="0.5dp"
+            app:border_color="@android:color/white"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号：111111"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="40dp"
+            style="@style/text_size_14_text_white"
+            android:id="@+id/me__username_tv"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/me_gridview"
+            android:numColumns="3"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="13dp"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="#00FFFFFF"
+            android:verticalSpacing="13dp"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"/>
+
+        <!--<com.manager.widgets.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.manager.widgets.MyGridView1
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/me_gridview"
+                    android:numColumns="3"/>
+
+            </LinearLayout>
+        </com.manager.widgets.MyScrollView>-->
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_color_13"
+              android:focusable="false"
+              android:descendantFocusability="blocksDescendants"  >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_14_tv1"
+                android:layout_gravity="center_vertical"
+                style="@style/text_size_12_text_color_2"
+                android:text="福彩1111"
+                android:layout_marginLeft="10dp"
+                android:focusable="false"
+                android:layout_centerVertical="true"
+                android:singleLine="true"/>
+
+            <TextView
+                style="@style/text_size_10_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_14_tv11"
+                android:layout_gravity="center_vertical"
+                android:text="@string/bettingshop_info3"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:layout_toRightOf="@+id/list_item_14_tv1"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                style="@style/text_size_12_text_color_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_14_tv12"
+                android:layout_gravity="center_vertical"
+                android:text="xxxxxxx"
+                android:layout_marginLeft="10dp"
+                android:focusable="false"
+                android:layout_toRightOf="@+id/list_item_14_tv11"
+                android:visibility="gone"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/text_size_12_text_color_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_14_tv3"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:text="x5"
+            android:focusable="false"
+            android:layout_alignParentRight="false"
+            android:layout_centerVertical="true"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_14_tv2"
+            android:layout_gravity="center_vertical"
+            style="@style/text_size_12_text_color_2"
+            android:visibility="visible"
+            android:text="¥2"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:focusable="false"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.2"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

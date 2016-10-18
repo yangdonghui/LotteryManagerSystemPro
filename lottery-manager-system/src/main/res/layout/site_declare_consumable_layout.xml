@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            style="@style/text_size_14_text_color_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/site_declare_info15"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            style="@style/text_size_14_text_color_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="打印纸"
+            android:id="@+id/site_declare_child_type_consumable"
+            android:drawableRight="@mipmap/message_nav_return2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:clickable="true"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            style="@style/text_size_14_text_color_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/site_declare_info4"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            style="@style/text_size_14_text_color_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/site_declare_child_type_consumable_declarenum_tv"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:hint="@string/site_declare_info12"
+            android:textColorHint="@color/text_color_4"
+            android:background="@null"
+            android:inputType="number"
+            android:imeOptions="actionDone"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            style="@style/text_size_14_text_color_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/site_declare_info5"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            style="@style/text_size_14_text_color_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/site_declare_child_type_consumable_leftnum_tv"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:hint="@string/site_declare_info13"
+            android:textColorHint="@color/text_color_4"
+            android:background="@null"
+            android:inputType="number"
+            android:imeOptions="actionDone"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            style="@style/text_size_14_text_color_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/site_declare_info3"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            style="@style/text_size_14_text_color_3"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:background="@drawable/rect_radius_13"
+            android:hint="@string/site_declare_info10"
+            android:textColorHint="@color/text_color_4"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="15dp"
+            android:maxLines="5"
+            android:gravity="top"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/site_declare_child_type_consumable_info_tv"
+            />
+    </LinearLayout>
+
+</LinearLayout>

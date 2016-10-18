@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_str_15"
+                android:id="@+id/list_item_18_tv1"
+                android:layout_weight="1"
+                android:singleLine="true"
+                style="@style/text_size_14_text_color_11"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/money_str"
+                    style="@style/text_size_14_text_color_11"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:id="@+id/list_item_18_tv2"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true"
+                    android:layout_marginRight="10dp"
+                    style="@style/text_size_14_text_color_11"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付成功"
+            android:id="@+id/list_item_18_tv3"
+            android:singleLine="true"
+            style="@style/text_size_12_text_color_3"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016年3月1日 15::20"
+            android:id="@+id/list_item_18_tv4"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            style="@style/text_size_12_text_color_3"
+            />
+    </LinearLayout>
+
+</LinearLayout>

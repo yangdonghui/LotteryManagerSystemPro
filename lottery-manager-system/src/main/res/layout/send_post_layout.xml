@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/send_posts_rootview"
+              android:background="@color/bg_color_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/send_post_topview"
+        android:background="#24282d">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/site_declare_btn2"
+            android:id="@+id/send_post_cancel_btn"
+            android:layout_centerVertical="true"
+            style="@style/text_size_16_text_white"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/chat_info_1"
+            android:id="@+id/send_post_ok_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/text_size_16_text_bg_color_6"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/send_post_content_tv"
+            android:maxLines="5"
+            android:hint="@string/comunity_string1"
+            android:textColorHint="@color/text_color_19"
+            style="@style/text_size_12_text_color_20"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:gravity="top|left"
+            />
+
+        <com.manager.widgets.MyGridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_post_upload_gridView"
+            android:numColumns="auto_fit"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="#00FFFFFF"
+            app:line_bmp="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_4"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/send_post_position_img"
+                android:layout_centerVertical="true"
+                android:id="@+id/send_post_position_imgv"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_post_position_tv"
+                android:maxLines="5"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/send_post_position_imgv"
+                android:layout_marginLeft="10dp"
+                android:text="@string/comunity_string1"
+                style="@style/text_size_12_text_color_20"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

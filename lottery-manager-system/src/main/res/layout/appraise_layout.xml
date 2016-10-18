@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bg_color_7">
+
+        <TextView
+            style="@style/text_size_14_text_color_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/site_declare_info17"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/service_assessments_viewgroup">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/star_img_0"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/star_0"
+                android:layout_weight="1"
+                android:tag="0"
+                android:clickable="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/star_img_1"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/star_0"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:tag="1"
+                android:clickable="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/star_img_2"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/star_0"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:tag="2"
+                android:clickable="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/star_img_3"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/star_0"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:tag="3"
+                android:clickable="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/star_img_4"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/star_0"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:tag="4"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/text_size_12_view_line_3"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="@string/site_declare_info20"
+                android:id="@+id/star_sumbit_button"
+                android:background="@drawable/rect_radius_17"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                android:clickable="true"/>
+
+            <TextView
+                style="@style/text_size_12_view_line_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/site_declare_info19"
+                android:id="@+id/star_sumbit_finish_button"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        />
+</LinearLayout>

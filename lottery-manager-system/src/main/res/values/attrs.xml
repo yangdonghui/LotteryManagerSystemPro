@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="superrecyclerview">
+        <attr name="layout_empty" format="reference"/>
+        <attr name="layout_moreProgress" format="reference"/>
+        <attr name="layout_progress" format="reference"/>
+        <attr name="recyclerClipToPadding" format="boolean"/>
+        <attr name="recyclerPadding" format="dimension"/>
+        <attr name="recyclerPaddingTop" format="dimension"/>
+        <attr name="recyclerPaddingBottom" format="dimension"/>
+        <attr name="recyclerPaddingLeft" format="dimension"/>
+        <attr name="recyclerPaddingRight" format="dimension"/>
+        <attr name="scrollbarStyle">
+            <flag name="insideOverlay" value="0x0"/>
+            <flag name="insideInset" value="0x01000000"/>
+            <flag name="outsideOverlay" value="0x02000000"/>
+            <flag name="outsideInset" value="0x03000000"/>
+        </attr>
+
+        <attr name="mainLayoutId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpb_progress" format="integer" />
+        <attr name="cpb_progressbar_color" format="color" />
+        <attr name="cpb_background_progressbar_color" format="color" />
+        <attr name="cpb_progressbar_width" format="dimension" />
+        <attr name="cpb_background_progressbar_width" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="card">
+        <attr name="itemMarginTop" format="dimension" />
+        <attr name="bottomMarginTop" format="dimension" />
+        <attr name="yOffsetStep" format="dimension" />
+        <attr name="widthHeightRate" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="PraiseListView">
+        <attr name="item_color" format="color"/>
+        <attr name="item_selector_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandTextView">
+        <attr name="showLines" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchView">
+        <attr name="hint_text" format="string"/>
+        <attr name="type" format="integer"/>
+        <attr name="cancel_btn" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="LineTextLineView">
+        <attr name="title_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyGridView">
+        <attr name="line_bmp" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="LetterSpacingTextView">
+        <attr name="letterSpacing" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="ChangeBuyNumView">
+        <attr name="initNum" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SideBarListView">
+        <attr name="fromType" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeListView">
+        <attr name="swipeOpenOnLongPress" format="boolean"/>
+        <attr name="swipeAnimationTime" format="integer"/>
+        <attr name="swipeOffsetLeft" format="dimension"/>
+        <attr name="swipeOffsetRight" format="dimension"/>
+        <attr name="swipeCloseAllItemsWhenMoveList" format="boolean"/>
+        <attr name="swipeFrontView" format="reference"/>
+        <attr name="swipeBackView" format="reference"/>
+        <attr name="maxMoveDis" format="dimension"/>
+        <attr name="swipeMode" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="both" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="left" value="3"/>
+        </attr>
+        <attr name="swipeActionLeft" format="enum">
+            <enum name="reveal" value="0"/>
+            <enum name="dismiss" value="1"/>
+            <enum name="choice" value="2"/>
+        </attr>
+        <attr name="swipeActionRight" format="enum">
+            <enum name="reveal" value="0"/>
+            <enum name="dismiss" value="1"/>
+            <enum name="choice" value="2"/>
+        </attr>
+        <attr name="swipeDrawableChecked" format="reference"/>
+        <attr name="swipeDrawableUnchecked" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackground" format="reference|color" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="mode">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+
+</resources>

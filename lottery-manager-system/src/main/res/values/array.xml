@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 站点申报分类 -->
+    <string-array name="declare_type_spingarry">
+        <item>故障申报</item>
+        <item>耗材申报</item>
+    </string-array>
+    <string-array name="declare_type_spingarry1">
+        <item>打印机</item>
+        <item>扫描仪</item>
+        <item>投注机</item>
+        <item>线路</item>
+    </string-array>
+    <string-array name="declare_type_spingarry2">
+        <item>打印纸</item>
+        <item>宣传页</item>
+        <item>投注单</item>
+    </string-array>
+
+    <!-- 管理员配送失败原因 -->
+    <string-array name="manager_delivery_failure_spingarry">
+        <item>收货人不在，无法签收</item>
+        <item>调整订单，客户要求暂不配送</item>
+        <item>其他原因</item>
+    </string-array>
+
+    <!-- 性别 -->
+    <string-array name="sex_spingarry">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <!-- 账号状态 -->
+    <string-array name="account_state_spingarry">
+        <item>启用</item>
+        <item>停用</item>
+    </string-array>
+
+    <!-- 社区分类 -->
+    <string-array name="community_type_spingarry">
+        <item>双色球</item>
+        <item>大乐透</item>
+        <item>大杂烩</item>
+        <item>生活趣事</item>
+        <item>全民娱乐</item>
+    </string-array>
+
+</resources>

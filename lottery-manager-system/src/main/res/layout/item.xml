@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/bg_color_9"
+              android:orientation="horizontal"
+              android:id="@+id/item_rootview">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_item_checkBox"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:button="@drawable/pay_way_check"
+        android:visibility="gone"
+        android:focusable="false"
+        android:enabled="false"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/contact_item_icon"
+        android:src="@drawable/lena_debug"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/itemTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:text="体彩管理员"
+            style="@style/text_size_14_text_color_12"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是张三"
+            android:id="@+id/contact_item_info_Tv"
+            style="@style/text_size_12_text_color_4"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_item_add_btn"
+            android:background="@drawable/rect_radius_18"
+            style="@style/text_size_11_text_color_3"
+            android:clickable="true"
+            android:text="@string/comunity_string3"
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

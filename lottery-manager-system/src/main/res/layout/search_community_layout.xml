@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/search_community_rootview">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/search_community_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_13">
+
+        <com.manager.view.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_community_searchview"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            app:hint_text="@string/comunity_info_hint_3"
+            app:type="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:id="@+id/search_community_tip_view">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView71"/>
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_community_gridview"
+                    android:numColumns="4"
+                    android:layout_marginTop="10dp"
+                    android:verticalSpacing="10dp"
+                    android:listSelector="@android:color/transparent"
+                    android:cacheColorHint="#00FFFFFF"/>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:fillViewport="false"
+                android:scrollbars="none"
+                android:id="@+id/search_community_scrollview">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"
+                        android:layout_marginTop="13dp"
+                        android:visibility="gone"/>
+
+                    <com.manager.widgets.MyListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/search_community_listview"
+                        android:divider="@drawable/line_single_2"
+                        android:dividerHeight="1dp"
+                        android:listSelector="@android:color/transparent"
+                        android:cacheColorHint="#00FFFFFF"
+                        android:background="@color/bg_color_13"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"
+                        android:layout_marginBottom="13dp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

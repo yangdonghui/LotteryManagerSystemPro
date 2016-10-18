@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:id="@+id/list_item_20_view"
+              android:clickable="true">
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="其他原因"
+        android:id="@+id/list_item_20_checkBox"
+        android:button="@drawable/pay_way_check"
+        style="@style/text_size_14_text_color_3"
+        android:paddingLeft="15dp"
+        android:clickable="false"
+        android:enabled="false"/>
+
+</LinearLayout>

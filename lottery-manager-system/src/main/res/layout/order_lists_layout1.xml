@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        style="@style/text_size_12_text_color_3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/pay_info_str5"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.manager.widgets.MyListView1
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_confirm_all_orders_expandableListView"
+                android:groupIndicator="@null"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:headerDividersEnabled="false"
+                android:scrollbars="none"
+                android:overScrollMode="never"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="#00FFFFFF"
+                android:layout_gravity="center"
+                android:background="@drawable/rect_radius_10_3"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="13dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_info_str6"
+                android:layout_gravity="center_vertical"
+                style="@style/text_size_15_text_color_3"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_confirm_orders_money_tv"
+                style="@style/text_size_16_text_color_10"
+                android:text="¥ 1200"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        />
+
+</LinearLayout>

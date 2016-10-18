@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_color_7"
+              android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/text_size_14_text_color_2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/list_item_13_title_tv"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:text="双色球十月海报"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            style="@style/text_size_12_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lottery_city_info18"
+                            android:id="@+id/list_item_13_value_tv2"/>
+
+                        <TextView
+                            style="@style/text_size_12_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:id="@+id/list_item_13_value_tv"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            style="@style/text_size_12_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="卷"
+                            android:id="@+id/list_item_13_value_tv1"
+                            android:singleLine="true"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_size_15_text_color_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥200"
+                        android:id="@+id/list_item_13_price_tv1"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:gravity="right"/>
+
+                    <TextView
+                        style="@style/text_size_10_text_color_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/special_symbol_str"
+                        android:id="@+id/list_item_13_price_tv22"
+                        android:layout_marginBottom="3dp"
+                        android:layout_toRightOf="@+id/list_item_13_price_tv1"
+                        android:layout_alignParentBottom="false"
+                        android:layout_alignBottom="@+id/list_item_13_price_tv1"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="false"/>
+
+                    <TextView
+                        style="@style/text_size_10_text_color_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="本"
+                        android:id="@+id/list_item_13_price_tv33"
+                        android:layout_marginBottom="3dp"
+                        android:layout_toRightOf="@+id/list_item_13_price_tv22"
+                        android:layout_alignParentBottom="false"
+                        android:layout_alignBottom="@+id/list_item_13_price_tv1"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="false"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.manager.view.ChangeBuyNumView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_13_changeview"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                app:initNum="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/view_line_4"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:clickable="true"
+            android:id="@+id/list_item_13_remove_btn">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/cart_remove_nav_15"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

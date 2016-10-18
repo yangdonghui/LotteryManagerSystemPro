@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:id="@+id/select_number_rootview">
+
+    <include
+        android:id="@+id/select_number_topview"
+        layout="@layout/topview_arrows_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none"
+            android:id="@+id/select_num_scrollview">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:orientation="vertical"
+                    android:background="@color/bg_color_13">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_2"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                style="@style/text_size_15_text_color_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="双色球"
+                                android:id="@+id/select_number_tv1"/>
+
+                            <TextView
+                                style="@style/text_size_12_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/debug_str_17"
+                                android:id="@+id/select_number_tv2"/>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/line_single_2"
+                            />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp">
+
+                            <include
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                layout="@layout/select_number_tool_layout"
+                                android:id="@+id/select_number_tool_include"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="13dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/text_size_15_text_bg_color_11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/betting_str2"/>
+
+                                <TextView
+                                    style="@style/text_size_12_text_color_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="@string/betting_str4"
+                                    android:id="@+id/select_number_tv4"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp">
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/lottery_city_nav_5"/>
+
+                                    <TextView
+                                        style="@style/text_size_12_text_white"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/betting_str10"/>
+                                </FrameLayout>
+
+                                <com.manager.widgets.MyGridView
+                                    android:id="@+id/Ssq_redBallLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:columnWidth="25dp"
+                                    android:numColumns="auto_fit"
+                                    android:stretchMode="spacingWidth"
+                                    android:verticalSpacing="10dp"
+                                    android:horizontalSpacing="3dp"
+                                    android:scrollbars="none"
+                                    android:listSelector="@android:color/transparent"
+                                    android:cacheColorHint="#00FFFFFF"
+                                    android:layout_marginLeft="3dp"
+                                    app:line_bmp="1"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@drawable/line_single_2"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="13dp"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                style="@style/text_size_15_text_bg_color_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/betting_str3"/>
+
+                            <TextView
+                                style="@style/text_size_12_text_color_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/betting_str5"
+                                android:id="@+id/select_number_tv5"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/lottery_city_nav_5"/>
+
+                                <TextView
+                                    style="@style/text_size_12_text_white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/betting_str10"/>
+                            </FrameLayout>
+
+                            <com.manager.widgets.MyGridView
+                                android:id="@+id/Ssq_blueBallLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnWidth="25dp"
+                                android:numColumns="auto_fit"
+                                android:stretchMode="spacingWidth"
+                                android:verticalSpacing="10dp"
+                                android:horizontalSpacing="3dp"
+                                android:listSelector="@android:color/transparent"
+                                android:cacheColorHint="#00FFFFFF"
+                                android:layout_marginLeft="3dp"
+                                app:line_bmp="1"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rect_radius_14_2"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginBottom="13dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/select_number_add_btn"
+                            android:clickable="true">
+
+                            <TextView
+                                style="@style/text_size_21_text_white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/wallet_str_20"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|right"
+                                android:layout_marginRight="5dp"/>
+
+                            <TextView
+                                style="@style/text_size_14_text_white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/betting_str7"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center_vertical"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_2"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="13dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_2"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/bg_color_13">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/betting_str6"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                />
+
+                            <TextView
+                                style="@style/text_size_12_text_color_3"
+                                android:layout_width="60dp"
+                                android:layout_height="25dp"
+                                android:text="@string/entrust_str17_5"
+                                android:background="@drawable/rect_radius_26_1"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:clickable="true"
+                                android:visibility="visible"
+                                android:id="@+id/select_number_remove_all_btn"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@drawable/line_single_2"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+
+                            <com.manager.widgets.ScrollDisabledListView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/select_number_listview"
+                                android:divider="@drawable/line_single_2"
+                                android:dividerHeight="1dp"
+                                android:fadingEdge="none"
+                                android:headerDividersEnabled="false"
+                                android:scrollbars="none"
+                                android:overScrollMode="never"
+                                android:listSelector="@android:color/transparent"
+                                android:cacheColorHint="#00FFFFFF"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:text="@string/entrust_str18"
+                                android:id="@+id/select_number_tv3"
+                                android:gravity="center_vertical|center_horizontal"
+                                style="@style/text_size_12_text_color_4"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_2"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/select_number_bottom_view"
+                    android:layout_marginBottom="13dp">
+
+                    <Button
+                        android:id="@+id/select_number_bottom_btn1"
+                        style="@style/text_size_14_text_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_radius_14_2"
+                        android:text="@string/betting_str8"
+                        android:clickable="true"/>
+
+                    <Button
+                        android:id="@+id/select_number_bottom_btn2"
+                        style="@style/text_size_14_text_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_radius_14_2"
+                        android:text="@string/betting_str9"
+                        android:clickable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.manager.view.SelectNumTipView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_num_tip_include"
+            android:layout_marginTop="-30dp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

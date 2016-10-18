@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/lottery_introduce_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lottery_bg"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/lottery_info_nav_01"
+                android:scaleType="centerCrop"
+                android:id="@+id/lottery_introduce_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/lottery_introduce_icon"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_4"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    style="@style/text_size_12_text_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:text="详细介绍"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/list_item_30_tv1"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_4"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <com.manager.widgets.MyListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/list_item_30"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:text="@string/betting_str1"
+            android:id="@+id/lottery_introduce_bet_btn"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rect_radius_14_1"
+            style="@style/text_size_14_text_white"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

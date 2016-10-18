@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/topview_arrows_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/site_declare_to_detail_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="13dp">
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/site_declare_userinfo_layout"
+                        android:id="@+id/declare_to_detail_userinfo_include"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="13dp"
+                    android:visibility="visible">
+
+                    <ViewStub
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/declare_to_detail_viewStub"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="@string/site_declare_btn1"
+                    android:background="@drawable/rect_radius_14_2"
+                    style="@style/text_size_15_text_white"
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/declare_to_detail_ok_btn"
+                    android:clickable="true"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:text="@string/site_declare_btn2"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_radius_16"
+                        style="@style/text_size_14_text_color_3"
+                        android:id="@+id/declare_to_detail_cancel_btn"
+                        android:clickable="true"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:text="@string/site_declare_btn3"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_radius_16"
+                        style="@style/text_size_14_text_color_3"
+                        android:id="@+id/declare_to_detail_change_btn"
+                        android:clickable="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

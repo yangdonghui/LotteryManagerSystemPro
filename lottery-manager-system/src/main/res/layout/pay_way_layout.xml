@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    >
+
+    <TextView
+        style="@style/text_size_12_text_color_3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/pay_info_str1"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_7">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_0"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            >
+
+            <TextView
+                style="@style/text_size_12_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/pay_info_str11"
+                android:id="@+id/pay_way_checkBox1"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/pay_nav_14"
+                android:drawablePadding="10dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="工商银行 ****0421"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/message_nav_return2"
+                android:drawablePadding="5dp"
+                android:layout_marginRight="10dp"
+                style="@style/text_size_12_text_color_4"
+                android:id="@+id/pay_way_checkBox1_tv"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:src="@drawable/list_divider2"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_size_12_text_color_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/pay_info_str12"
+                android:id="@+id/pay_way_checkBox2"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/pay_nav_10"
+                android:drawablePadding="10dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:src="@drawable/list_divider2"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_size_12_text_color_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/pay_info_str13"
+                android:id="@+id/pay_way_checkBox3"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/pay_nav_10"
+                android:drawablePadding="10dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:src="@drawable/list_divider2"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            >
+
+            <TextView
+                style="@style/text_size_12_text_color_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/pay_info_str14"
+                android:id="@+id/pay_way_checkBox4"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/pay_nav_10"
+                android:drawablePadding="10dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_0"/>
+    </LinearLayout>
+</LinearLayout>

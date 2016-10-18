@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:tag="head_circle_rootview">
+
+    <RelativeLayout android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/comunity_top_img"
+            android:id="@+id/community_top_imgv"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="false"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阿拉斯加野猫"
+                android:id="@+id/community_nick_tv"
+                android:layout_toLeftOf="@+id/community_head_bg"
+                android:layout_toStartOf="@+id/community_head_bg"
+                android:layout_alignBottom="@+id/community_head_bg"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                style="@style/text_size_14_text_color_3"/>
+
+            <RelativeLayout
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/community_head_bg"
+                android:background="@color/bg_color_5">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/comunity_head_img"
+                    android:id="@+id/community_head_imgv"
+                    android:layout_alignParentRight="false"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="2dp"
+                    android:clickable="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

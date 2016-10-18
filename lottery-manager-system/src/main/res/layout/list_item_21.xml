@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.manager.widgets.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bank_nav_14"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            app:border_width="0.5dp"
+            app:border_color="@color/view_line_4"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                style="@style/text_size_14_text_color_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="建设银行  储蓄卡  (0660)"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/list_item_21_tv1"
+                />
+
+            <TextView
+                style="@style/text_size_12_view_line_1"
+                android:id="@+id/list_item_21_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:text="此交易不支持信用卡"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/message_nav_return2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:id="@+id/list_item_21_arrow_img"/>
+    </LinearLayout>
+
+</LinearLayout>

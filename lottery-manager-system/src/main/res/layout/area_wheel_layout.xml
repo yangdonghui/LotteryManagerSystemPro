@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+              android:background="@color/bg_color_21">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/bg_color_0">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:gravity="center_vertical|center_horizontal"
+            style="@style/text_size_14_text_white"
+            android:clickable="true"
+            android:id="@+id/area_wheel_btn_cancel"/>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:id="@+id/area_wheel_btn_confirm"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|center_horizontal"
+            style="@style/text_size_14_text_white"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_color_21">
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </kankan.wheel.widget.WheelView>
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </kankan.wheel.widget.WheelView>
+
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/id_district"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </kankan.wheel.widget.WheelView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="165dp"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:background="@drawable/rect_radius_24">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:id="@+id/grid_item_3_view">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/grid_item_3_icon_imgv"
+            android:src="@drawable/billing_nav_07"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="体彩灌篮高手"
+        android:id="@+id/grid_item_3_title_tv"
+        android:layout_marginTop="5dp"
+        style="@style/text_size_15_text_color_2"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥600"
+                android:id="@+id/grid_item_3_price_tv"
+                style="@style/text_size_16_text_color_10"
+                android:singleLine="true"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/special_symbol_str"
+                style="@style/text_size_10_text_color_10"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                style="@style/text_size_10_text_color_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本"
+                android:id="@+id/grid_item_3_price_tv1"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+        <!--<include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/buy_change_num_layout"
+            android:id="@+id/grid_item_3_changeview_include"/>-->
+
+        <com.manager.view.ChangeBuyNumView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/grid_item_3_changeview"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:initNum="0"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="@string/billing_btn_str1"
+        android:id="@+id/grid_item_3_buy_btn"
+        android:background="@drawable/rect_radius_25"
+        style="@style/text_size_12_text_white"
+        android:visibility="gone"/>
+</LinearLayout>

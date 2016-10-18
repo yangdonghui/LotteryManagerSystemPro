@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/register_finish_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="29dp">
+
+            <include
+                layout="@layout/register_progress_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_finish_progress_include"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/register_finish_img"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_info4_1"
+                android:layout_centerInParent="true"
+                android:layout_above="@+id/textView59"
+                style="@style/text_size_32_view_line_3"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_info4_2"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="13dp"
+                style="@style/text_size_21_view_line_3"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/text_size_15_text_white"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="@string/register_info4_3"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/register_finish_ok_btn"
+            android:background="@drawable/rect_radius_14_3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+</LinearLayout>

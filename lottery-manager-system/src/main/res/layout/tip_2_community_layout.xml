@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_color_7">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nav_013"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comunity_info_13"
+                style="@style/text_size_11_text_color_3"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:text="@string/contacts_info_2"
+                android:id="@+id/community_tip2_btn"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rect_radius_18"
+                style="@style/text_size_11_text_color_3"
+                android:layout_marginTop="15dp"
+                android:clickable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

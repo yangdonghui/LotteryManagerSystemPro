@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_color_13">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/search_horizontalScrollView"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMenu"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/search_img1"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/search_icon_imgv"
+                    android:scaleType="center"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/search_layout_editText"
+            android:layout_weight="1"
+            android:hint="@string/contacts_info_8"
+            style="@style/text_size_14_text_color_3"
+            android:textColorHint="@color/text_color_4"
+            android:paddingLeft="5dp"
+            android:ems="20"
+            android:imeOptions="actionSearch"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="text"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:layout_toRightOf="@+id/search_horizontalScrollView"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

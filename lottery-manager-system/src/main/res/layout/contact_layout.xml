@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/topview_arrows_tv"
+            android:id="@+id/contact_topview"/>
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:id="@+id/contact_add_btn"
+            android:clickable="true"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/chat_icon3"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+
+        <com.manager.widgets.SideBarListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/contact_listview2"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_color_7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:id="@+id/tab_cursor"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rect_radius_14_2"
+            android:scaleType="matrix"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_size_14_text_white"
+                android:id="@+id/tab_text1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/lottery_city_info13"
+                android:clickable="true"
+                />
+
+            <TextView
+                style="@style/text_size_14_text_color_3"
+                android:id="@+id/tab_text2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/lottery_city_info11"
+                android:clickable="true"/>
+
+            <TextView
+                style="@style/text_size_14_text_color_3"
+                android:id="@+id/tab_text3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/lottery_city_info14"
+                android:clickable="true"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_2"
+        />
+
+</LinearLayout>

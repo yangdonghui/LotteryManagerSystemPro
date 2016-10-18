@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rect_radius_29"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="@string/entrust_str17_1"
+                android:id="@+id/select_number_tool_btn1"
+                android:background="@drawable/rect_radius_26_1"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|center_horizontal"
+                style="@style/text_size_12_text_color_3"
+                android:clickable="true"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="@string/entrust_str17_2"
+                android:id="@+id/select_number_tool_btn2"
+                android:background="@drawable/rect_radius_26_1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                style="@style/text_size_12_text_color_3"
+                android:clickable="true"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="@string/entrust_str17_3"
+                android:id="@+id/select_number_tool_btn3"
+                android:background="@drawable/rect_radius_26_1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                style="@style/text_size_12_text_color_3"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="@string/entrust_str17_4"
+            android:id="@+id/select_number_tool_btn4"
+            android:background="@drawable/rect_radius_26_1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            style="@style/text_size_12_text_color_3"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</LinearLayout>

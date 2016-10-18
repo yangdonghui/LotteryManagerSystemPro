@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"   >
+
+    <com.manager.clippic.ClipImageLayout
+        android:id="@+id/id_clipImageLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重拍"
+        android:id="@+id/clip_btn1"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        style="@style/text_size_14_text_white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:clickable="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用照片"
+        android:id="@+id/clip_btn2"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        style="@style/text_size_14_text_white"
+        android:gravity="center_vertical|right"
+        android:paddingRight="20dp"
+        android:clickable="true"/>
+
+</RelativeLayout>

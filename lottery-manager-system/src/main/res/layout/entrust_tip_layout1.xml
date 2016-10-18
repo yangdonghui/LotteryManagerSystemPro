@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/bg_color_8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="@string/cart_info_str3"
+                android:id="@+id/entrust_tip1_checkBox"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/pay_way_check"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="5dp"
+                style="@style/text_size_15_text_white"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:checked="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical">
+
+            <Button
+                style="@style/text_size_12_text_white"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="@string/entrust_str_5"
+                android:id="@+id/entrust_tip1_btn1"
+                android:background="@drawable/rect_radius_14_1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

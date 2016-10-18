@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_color_8"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp">
+
+                <TextView
+                    style="@style/text_size_14_text_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/cart_tip_1_info_tv21"/>
+
+                <TextView
+                    style="@style/text_size_14_text_color_10"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/cart_tip_1_info_tv2"
+                    android:layout_toRightOf="@+id/cart_tip_1_info_tv21"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"/>
+
+                <TextView
+                    style="@style/text_size_14_text_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="种"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/cart_tip_1_info_tv22"
+                    android:layout_toRightOf="@+id/cart_tip_1_info_tv2"
+                    />
+
+                <TextView
+                    style="@style/text_size_14_text_color_10"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cart_tip_1_info_tv3"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/cart_tip_1_info_tv22"
+                    android:text="4"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="2dp"/>
+
+                <TextView
+                    style="@style/text_size_14_text_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="包"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/cart_tip_1_info_tv23"
+                    android:layout_toRightOf="@+id/cart_tip_1_info_tv3"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cart_info_str2"
+                    style="@style/text_size_14_text_white"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/cart_tip_1_info_tv11"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    style="@style/text_size_14_text_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥ 1800"
+                    android:id="@+id/cart_tip_1_info_tv"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/cart_tip_1_info_tv11"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="@string/lottery_city_info19"
+            android:id="@+id/cart_tip_1_btn"
+            android:background="@drawable/rect_radius_14_2"
+            style="@style/text_size_14_text_white"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"
+            />
+    </LinearLayout>
+</LinearLayout>

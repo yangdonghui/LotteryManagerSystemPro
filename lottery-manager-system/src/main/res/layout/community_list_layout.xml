@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/community_list_rootview">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/topview_arrows_tv"
+            android:id="@+id/community_list_topview"/>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/community_list_search_btn"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/search_img"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <com.manager.widgets.PullToRefreshView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_pull_refresh_view"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/community_list_scrollview"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:fillViewport="false"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"
+                        android:layout_marginTop="13dp"/>
+
+                    <com.manager.widgets.MyListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/community_list_listview"
+                        android:divider="@drawable/line_single_2"
+                        android:dividerHeight="1dp"
+                        android:listSelector="@android:color/transparent"
+                        android:cacheColorHint="#00FFFFFF"
+                        android:background="@color/bg_color_13"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_0"
+                        android:layout_marginBottom="13dp"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </com.manager.widgets.PullToRefreshView>>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

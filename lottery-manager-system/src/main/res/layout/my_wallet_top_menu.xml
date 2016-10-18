@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="115dp"
+              android:background="@color/bg_color_6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/wallet_menu_btn1"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="付款"
+                android:drawableTop="@mipmap/pay_nav_01"
+                android:drawablePadding="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                style="@style/text_size_14_text_white"
+                android:layout_centerInParent="true"
+                android:id="@+id/wallet_menu_tv1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/wallet_menu_btn2"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额"
+                android:drawableTop="@mipmap/pay_nav_02"
+                android:drawablePadding="5dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|center_horizontal"
+                style="@style/text_size_14_text_white"
+                android:layout_centerInParent="true"
+                android:id="@+id/wallet_menu_tv2"
+                android:enabled="false"
+                android:focusable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥89.96"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom|center_horizontal"
+                style="@style/text_size_12_text_color_14"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/wallet_menu_tv2"
+                android:layout_marginTop="5dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:id="@+id/wallet_menu_btn3"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银行卡"
+                android:drawableTop="@mipmap/pay_nav_03"
+                android:drawablePadding="5dp"
+                android:gravity="center_horizontal"
+                style="@style/text_size_14_text_white"
+                android:layout_centerInParent="true"
+                android:id="@+id/wallet_menu_tv3"
+                android:enabled="false"
+                android:focusable="false"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/wallet_bettingshop_payment_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_1"
+            android:layout_marginTop="13dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_7">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    style="@style/text_size_14_text_color_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wallet_str_6"
+                    android:layout_marginTop="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        style="@style/text_size_14_text_color_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="彩票中心"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/wallet_bettingshop_payment_tv1"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wallet_bettingshop_payment_tv1"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/text_size_14_text_color_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wallet_str_17"
+                            android:layout_below="@+id/wallet_bettingshop_payment_tv1"/>
+
+                        <TextView
+                            style="@style/text_size_14_text_color_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/money_str"
+                            android:layout_below="@+id/textView80"
+                            android:layout_marginLeft="5dp"/>
+
+                        <TextView
+                            style="@style/text_size_14_text_color_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5000"
+                            android:layout_below="@+id/wallet_bettingshop_payment_tv1"
+                            android:id="@+id/wallet_bettingshop_payment_tv2"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/line_single_1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    style="@style/text_size_14_text_color_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wallet_str_11"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    style="@style/text_size_14_text_color_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:ems="20"
+                    android:inputType="number|numberSigned"
+                    android:background="@null"
+                    android:hint="@string/wallet_str_4"
+                    android:textColorHint="@color/text_color_4"
+                    android:imeOptions="actionDone"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:digits="1234567890."
+                    android:id="@+id/wallet_bettingshop_payment_edit"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_1"
+            />
+
+        <Button
+            style="@style/text_size_14_text_white"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/next_info_common_1"
+            android:id="@+id/wallet_bettingshop_payment_next_btn"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rect_radius_14_2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+</LinearLayout>

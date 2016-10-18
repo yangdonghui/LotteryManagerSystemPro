@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/demo_social_sns_bg"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/digBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="点赞"
+            android:gravity="center"
+            style="@style/text_size_12_text_color_4"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/circle_zan"
+            android:layout_toRightOf="@+id/digBtn"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/digicon"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="1dp"
+    	android:layout_height="match_parent"
+    	android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#707070"
+        />
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/commentBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="评论"
+            android:gravity="center"
+            style="@style/text_size_12_text_color_4"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/circle_pinglun"
+            android:layout_toRightOf="@+id/commentBtn"
+            android:layout_marginLeft="5dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#707070"
+        />
+
+    <RelativeLayout
+        android:layout_width="55dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/chatBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="私聊"
+            android:gravity="center"
+            style="@style/text_size_12_text_color_4"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/circle_zhusiliao"
+            android:layout_toRightOf="@+id/chatBtn"
+            android:layout_marginLeft="5dp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

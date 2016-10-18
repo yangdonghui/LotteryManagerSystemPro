@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@color/text_color_3"
+        android:id="@+id/sort_view_tab1"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lottery_city_tab_top1"
+            style="@style/text_size_14_text_white"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_horizontal"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:id="@+id/sort_view_tab2"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lottery_city_tab_top2"
+            android:gravity="center_vertical|center_horizontal"
+            style="@style/text_size_14_text_color_3"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:id="@+id/sort_tab2_tv"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/billing_nav_02"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/sort_tab2_tv"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:id="@+id/sort_view_tab3"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lottery_city_tab_top3"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            style="@style/text_size_14_text_color_3"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:id="@+id/sort_tab3_tv"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/billing_nav_02"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/sort_tab3_tv"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:id="@+id/sort_view_tab4"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lottery_city_tab_top4"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            style="@style/text_size_14_text_color_3"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:id="@+id/sort_tab4_tv"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/billing_nav_02"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/sort_tab4_tv"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp">
+
+        <TextView
+            style="@style/text_size_12_text_color_3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="01月26日   12:15"
+            android:id="@+id/list_item_3_time_textview"
+            android:background="@color/text_color_4"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal"/>
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_0"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color_9"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/list_item_3_icon_imgeview"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/debug_nav_07"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/text_size_15_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_item_str_12"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/textView37"/>
+
+                <TextView
+                    style="@style/text_size_15_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/debug_str_0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/list_item_3_title_textview"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_item_str_13"
+                    android:id="@+id/textView40"
+                    style="@style/text_size_12_text_color_4"/>
+
+                <TextView
+                    style="@style/text_size_12_text_color_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/list_item_3_time1_textview"
+                    android:text="@string/debug_str_2"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/line_single_0"
+            />
+    </LinearLayout>
+</LinearLayout>

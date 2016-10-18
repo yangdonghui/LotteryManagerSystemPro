@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/topview_arrows_tv"
+            android:id="@+id/my_wallet_topview"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/my_wallet_history_btn"
+            android:clickable="true"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                style="@style/text_size_14_text_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/wallet_str_10"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.manager.view.WalletMenuView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_wallet_menu_view"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <com.manager.widgets.MyGridView1
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_wallet_gridView"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"/>
+    </LinearLayout>
+
+</LinearLayout>

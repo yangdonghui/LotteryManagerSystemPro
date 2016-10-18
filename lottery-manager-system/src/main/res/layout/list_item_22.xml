@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/list_item_22_back">
+
+        <Button
+            style="@style/text_size_15_text_white"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="删除"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@color/bg_color_19"
+            android:id="@+id/list_item_22_removebtn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/bg_color_9"
+        android:id="@+id/list_item_22_front"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/list_item_22_icon_imgv"
+            android:src="@mipmap/default_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/list_item_22_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible"
+                android:text="张三(休息中)"
+                style="@style/text_size_14_text_color_12"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456_1"
+                android:id="@+id/list_item_22_username_tv"
+                style="@style/text_size_12_text_color_4"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

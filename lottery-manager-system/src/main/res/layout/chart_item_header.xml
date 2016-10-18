@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="25dp"
+              android:orientation="vertical"
+              android:id="@+id/chart_item_ssq_rootview"
+              android:background="@color/bg_color_27">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:minHeight="40dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:id="@+id/chart_item_title_tv"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/text_color_13"/>
+
+        <com.manager.widgets.CHScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chart_item_ssq_item_scroll_title"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+                <com.manager.widgets.MyGridView2
+                    android:id="@+id/chart_item_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="spacingWidthUniform"
+                    android:scrollbars="none"
+                    android:listSelector="@android:color/transparent"
+                    android:cacheColorHint="#00FFFFFF">
+                </com.manager.widgets.MyGridView2>
+            </LinearLayout>
+        </com.manager.widgets.CHScrollView>
+
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:textColor="#CD3700"
+        android:textSize="20sp"
+        />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textColor="#000000"
+        android:textSize="17sp"/>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />-->
+
+</LinearLayout>

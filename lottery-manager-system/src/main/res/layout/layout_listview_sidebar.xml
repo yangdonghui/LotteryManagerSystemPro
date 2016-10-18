@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/bg_color_4">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:id="@+id/sidebar_scrollview">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_color_13"
+                    android:id="@+id/sider_parentview">
+
+                </LinearLayout>-->
+
+                <!-- 不同的地方 -->
+                <ViewStub
+                    android:id="@+id/sider_viewStub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.manager.widgets.MyListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00FFFFFF"
+                    android:listSelector="@android:color/transparent"
+                    android:divider="@drawable/line_single_1"
+                    android:dividerHeight="0.5dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/sidebar_bg_color"
+            android:textSize="30.0dip"
+            android:visibility="gone" />
+
+        <com.manager.widgets.SideBar
+            android:id="@+id/sidebar"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"/>
+</FrameLayout>

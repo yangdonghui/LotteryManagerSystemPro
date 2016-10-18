@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:swipe="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/topview_arrows_tv"
+            android:id="@+id/site_manager_employee_topview"/>
+
+        <TextView
+            style="@style/text_size_24_text_white"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:text="@string/wallet_str_20"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none"
+            android:background="@color/bg_color_9"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_0"
+                    />
+
+                <com.manager.widgets.MySwipeListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/site_manager_employee_listview"
+                    android:divider="@drawable/list_divider2"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@android:color/transparent"
+                    android:cacheColorHint="#00000000"
+                    swipe:swipeActionLeft="reveal"
+                    swipe:swipeActionRight="reveal"
+                    swipe:swipeAnimationTime="0"
+                    swipe:swipeBackView="@+id/list_item_22_back"
+                    swipe:swipeCloseAllItemsWhenMoveList="true"
+                    swipe:swipeFrontView="@+id/list_item_22_front"
+                    swipe:swipeMode="both"
+                    swipe:swipeOffsetLeft="0dp"
+                    swipe:swipeOffsetRight="0dp"
+                    swipe:swipeOpenOnLongPress="false"
+                    swipe:maxMoveDis="60dp"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_0"
+                    android:layout_marginBottom="13dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/rect_radius_14_5"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:id="@+id/site_manager_employee_add_btn">
+
+                    <TextView
+                        style="@style/text_size_18_text_color_bg_color_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wallet_str_20"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        style="@style/text_size_12_text_bg_color_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_info_btn5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/site_manager_employee_list_no"
+            android:background="@color/bg_color_4"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="未添加雇员！"
+                android:gravity="center_vertical|center_horizontal"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

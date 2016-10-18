@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/grid_item_4_icon_imgv"
+        android:src="@mipmap/lottery_icon_ssq"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_item_4_title_tv"
+        android:layout_marginTop="5dp"
+        style="@style/text_size_15_text_color_2"
+        android:singleLine="true"
+        android:text="双色球"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="@string/lottery_city_info12"
+        android:id="@+id/grid_item_4_btn"
+        android:background="@drawable/rect_radius_14_2"
+        style="@style/text_size_12_text_white"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+</LinearLayout>

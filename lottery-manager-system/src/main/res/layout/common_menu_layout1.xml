@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color_21">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        >
+
+        <TextView
+            style="@style/text_size_14_text_bg_color_12"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="@string/site_declare_btn2"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"
+            android:id="@+id/common_menu1_btn_cancel"/>
+
+        <TextView
+            style="@style/text_size_14_text_color_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/wallet_str_27"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            style="@style/text_size_14_text_bg_color_12"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="@string/setting_info_btn3"
+            android:id="@+id/common_menu1_btn_confirm"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <kankan.wheel.widget.WheelView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/common_menu1_wheelview"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+</LinearLayout>

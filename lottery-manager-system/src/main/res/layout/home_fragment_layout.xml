@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/home_top_view"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/home_top_view_include"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/home_content_child_view"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                >
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <com.manager.view.NewsColumnView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_announcement_view"
+                    android:layout_toRightOf="@+id/home_announcement_icon_imgv"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/btn_messge_up"
+                    android:clickable="true"
+                    android:id="@+id/home_announcement_icon_imgv"
+                    android:scaleType="center"
+                    android:layout_gravity="center_vertical"/>
+
+            </FrameLayout>
+
+            <com.manager.view.BigIconView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_content_child_big_icon_view"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentRight="false"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_fragment_imgv"
+                android:src="@mipmap/home_bg_label"
+                android:layout_marginLeft="20dp"
+                android:clickable="true"/>
+
+            <FrameLayout
+                android:id="@+id/myView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp">
+                <com.manager.widgets.ScrollLayout
+                    android:id="@+id/ScrollLayoutTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <!--<com.manager.widgets.PageControlView
+                    android:id="@+id/pageControl"
+                    android:layout_width="match_parent"
+                    android:layout_height="40px"
+                    android:layout_gravity="bottom"/>-->
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

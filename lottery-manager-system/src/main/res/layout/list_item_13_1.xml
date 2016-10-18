@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_color_7"
+              android:descendantFocusability="blocksDescendants"
+              android:id="@+id/list_item_13_1_rootview">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/list_item_13_1_item_view1"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        style="@style/text_size_14_text_color_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="打印纸十月海报"
+                        android:id="@+id/list_item_13_1_title_tv"
+                        android:singleLine="true"
+                        />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            style="@style/text_size_12_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lottery_city_info18"
+                            android:id="@+id/list_item_13_1_value_tv2"/>
+
+                        <TextView
+                            style="@style/text_size_12_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:id="@+id/list_item_13_1_value_tv"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            style="@style/text_size_12_text_color_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="卷"
+                            android:id="@+id/list_item_13_1_value_tv1"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/list_item_13_1_inventory_view"
+                    android:layout_marginRight="30dp"
+                    android:visibility="invisible">
+
+                    <TextView
+                        style="@style/text_size_12_text_color_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="库存"
+                        android:id="@+id/list_item_13_1_inventory_tv"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        style="@style/text_size_12_text_color_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/list_item_13_1_inventory_tv1"
+                        android:layout_toRightOf="@+id/list_item_13_1_inventory_tv"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        style="@style/text_size_15_text_color_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥100"
+                        android:id="@+id/list_item_13_1_price_tv1"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        style="@style/text_size_10_text_color_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/special_symbol_str"
+                        android:id="@+id/list_item_13_1_price_tv21"
+                        android:layout_marginBottom="1dp"
+                        android:layout_alignParentBottom="false"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/list_item_13_1_price_tv1"/>
+
+                    <TextView
+                        style="@style/text_size_10_text_color_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="卷"
+                        android:id="@+id/list_item_13_1_price_tv2"
+                        android:layout_marginBottom="1dp"
+                        android:layout_toRightOf="@+id/list_item_13_1_price_tv21"
+                        android:layout_alignParentBottom="false"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.manager.view.ChangeBuyNumView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_item_13_1_changeview"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                app:initNum="0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

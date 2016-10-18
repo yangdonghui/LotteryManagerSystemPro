@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_color_211">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal">
+
+        <com.manager.widgets.CircleImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/bank_nav_14"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            app:border_width="0.5dp"
+            app:border_color="@color/view_line_4"
+            android:id="@+id/wallet_pay_way_tip_imgv"/>
+
+        <TextView
+            style="@style/text_size_12_text_color_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="建设银行储蓄卡(0660)"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/wallet_pay_way_tip_tv1"/>
+
+        <TextView
+            style="@style/text_size_12_text_color_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="@string/comma_str"
+            android:id="@+id/wallet_pay_way_tip_tv2"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            style="@style/text_size_12_text_color_bg_color_12"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:text="@string/wallet_str_25"
+            android:id="@+id/wallet_pay_way_tip_tv3"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</LinearLayout>

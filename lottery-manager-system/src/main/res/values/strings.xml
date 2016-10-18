@@ -1,0 +1,562 @@
+<resources>
+    <string name="app_name">迷彩</string>
+    <string name="app_name2">业主</string>
+    <string name="app_name3">管理员</string>
+    <string name="app_name_info">Lottery Fans</string>
+
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <string name="backstr">返回</string>
+
+    <string name="app_info">欢迎来到彩迷</string>
+
+    <string name="delete_tip_str">确定删除吗？</string>
+
+    <string name="register_tip_str1">请填写真实姓名和证件号码，错误信息将导致注册失败！</string>
+    <string name="register_tip_str2">添加银行卡，才能使用钱包功能！</string>
+
+    <!-- tab标签文字 -->
+    <string name="site_tab_0">全部申请</string>
+    <string name="site_tab_1">进行中</string>
+    <string name="site_tab_2">已完成</string>
+
+    <string name="site_tab_content_0">未受理</string>
+    <string name="site_tab_content_1">进行中</string>
+    <string name="site_tab_content_2">已完成</string>
+
+
+    <!-- 登录注册相关 -->
+    <string name="identity_info">请选择您的身份</string>
+    <string name="identity_type_0">我是彩民</string>
+    <string name="identity_type_1">我是站点老板</string>
+    <string name="identity_type_2">我是管理员</string>
+
+    <string name="username_id">账号:</string>
+    <string name="username">账号</string>
+    <string name="username1">ID号</string>
+    <string name="password">密码</string>
+    <string name="password_new">新密码</string>
+    <string name="password_confirm">确认密码</string>
+
+    <string name="real_name">真实姓名</string>
+    <string name="identity_name">身份证号</string>
+
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="forget_pw_str">忘记密码</string>
+    <string name="register_info">我要注册</string>
+
+    <string name="pw_find_title">密码找回</string>
+    <string name="name_info">请输入您的账号</string>
+    <string name="name_info1">请输入您的站点ID编号</string>
+    <string name="name_info2">请输入您的管理员ID编号</string>
+    <string name="pw_info">请输入您的密码</string>
+    <string name="pw_info1">请输入您的旧密码</string>
+    <string name="user_hint_info">6-16位数字或英文</string>
+    <string name="user_hint_info1">请再次输入新密码</string>
+    <string name="user_hint_info2">请再次输入密码</string>
+    <string name="user_hint_info3">请输入您的手机号</string>
+
+    <string name="register_info1_1">我已阅读并同意</string>
+    <string name="register_info1_2">《服务协议》</string>
+    <string name="register_info1_3">请填写注册信息</string>
+    <string name="register_info2">完善个人资料</string>
+    <string name="register_info2_1">请完善个人资料</string>
+    <string name="register_hint_info2_1">请输入真实姓名</string>
+
+    <string name="register_info3">添加银行卡</string>
+    <string name="register_info3_1">请绑定持卡本人银行卡</string>
+    <string name="register_info3_2">持卡人</string>
+    <string name="register_info3_3">卡号</string>
+    <string name="register_hint_info3_1">请输入持卡本人姓名</string>
+    <string name="register_hint_info3_2">请输入您的银行卡号</string>
+
+    <string name="register_info4">完成</string>
+    <string name="register_info4_1">恭喜您</string>
+    <string name="register_info4_2">成为中国福利彩票彩民</string>
+    <string name="register_info4_3">进入使用</string>
+
+    <string name="register_info_5">站点注册</string>
+
+    <string name="next_info_common_1">下一步</string>
+    <string name="register_info_common_2">跳过此步</string>
+    <string name="register_info_common_3">服务协议</string>
+    <string name="register_info_common_4">同意</string>
+
+    <string name="register_info_common_5">扫描银行卡</string>
+    <string name="register_info_common_6">扫描身份证</string>
+
+
+    <!-- 首页 界面相关 -->
+    <string name="home_title">首页</string>
+    <string name="home_title_1">扫一扫</string>
+
+    <string name="lotterycity_title">彩票城</string>
+
+    <!-- 消息标签界面相关 -->
+    <string name="news_title">消息</string>
+    <string name="news_item_str_0">通知查看</string>
+    <string name="news_item_str_00">通知</string>
+    <string name="news_item_str_1">活动</string>
+    <string name="news_item_str_2">公告</string>
+    <string name="news_item_str_3">资讯</string>
+    <string name="news_item_str_4">开(中)奖</string>
+    <string name="news_item_str_41">开奖信息</string>
+    <string name="news_item_str_42">中奖信息</string>
+    <string name="news_item_str_5">建设中...</string>
+    <string name="news_item_str_6">公告:</string>
+    <string name="news_item_str_7">通知:</string>
+    <string name="news_item_str_9">资讯</string>
+    <string name="news_item_str_10">活动</string>
+    <string name="news_item_str_11">活动内容</string>
+    <string name="news_item_str_12">活动标题:</string>
+    <string name="news_item_str_13">活动时间:</string>
+    <string name="news_item_str_14">发布日期:</string>
+    <string name="news_item_str_15">发自:</string>
+    <string name="news_item_str_16">历史记录</string>
+    <string name="news_item_str_17">本期销售(元)</string>
+    <string name="news_item_str_18">奖池金额(元)</string>
+    <string name="news_item_str_19">奖项</string>
+    <string name="news_item_str_20">中奖注数</string>
+    <string name="news_item_str_21">每注奖金(元)</string>
+    <string name="news_item_str_22">一等奖</string>
+    <string name="news_item_str_23">二等奖</string>
+    <string name="news_item_str_24">三等奖</string>
+    <string name="news_item_str_25">四等奖</string>
+    <string name="news_item_str_26">五等奖</string>
+    <string name="news_item_str_27">六等奖</string>
+
+    <string name="debug_str_0">预开票已发售请及时预订</string>
+    <string name="debug_str_1">2016年第一期预开票已开始发售, 因数量有限, 请各位站点业主及时预订。2016年第一期预开票已开始发售, 因数量有限, 请各位站点业主及时预订。2016年第一期预开票已开始发售, 因数量有限, 请各位站点业主及时预订。</string>
+    <string name="debug_str_2">2016年1月20日 - 2016年5月20日</string>
+    <string name="debug_str_3">彩民理性购彩 机选中大奖</string>
+    <string name="debug_str_4">全国仅中出1注单注奖金1.72亿元的一等奖，在成都出现。</string>
+    <string name="debug_str_5">体彩评说1</string>
+    <string name="debug_str_6">第2016054期</string>
+    <string name="debug_str_7">2016-05-12 (周四)</string>
+    <string name="debug_str_8">298, 048, 220</string>
+    <string name="debug_str_9">254, 227, 996</string>
+    <string name="debug_str_10">体彩社区</string>
+    <string name="debug_str_11">一年一度新彩票发售</string>
+    <string name="debug_str_12">新一年的彩票发售现场，售卖火爆，彩民排队</string>
+    <string name="debug_str_13">一年一度新彩票发售，场面火爆，快来围观啊！</string>
+    <string name="debug_str_14">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="debug_str_15">北京市西城区闹市口大街125号</string>
+    <string name="debug_str_16">1000元以上返现10%</string>
+    <string name="debug_str_17">第2016063期 06月02日(周四)21:30截止</string>
+    <string name="debug_str_18">**** **** **** 4277</string>
+    <string name="debug_str_19">18701265806</string>
+    <string name="debug_str_20">1,000</string>
+    <string name="debug_str_21">2015-0622-1111</string>
+
+    <string name="debug_str_22">第一条　本规则依据财政部《彩票发行与销售管理暂行规定》和《中国福利彩票（电脑型）联合发行与销售管理暂行办法》（以下简称《管理办法》）制定。
+
+            \n第二条　中国福利彩票“双色球”（以下简称“双色球”）是一种联合发行的“乐透型”福利彩票。采用计算机网络系统发行销售，定期电视开奖。
+
+            \n第三条　“双色球”由中国福利彩票发行管理中心（以下简称中福彩中心）统一组织发行，在全国销售。
+
+            \n第四条　参与“双色球”销售的省级行政区域福利彩票发行中心（以下称省中心）在中福彩中心的直接领导下，负责对本地区的“双色球”销售活动实施具体的组织和管理。
+    </string>
+
+    <!-- 好友相关 -->
+    <string name="friend_str0">私聊</string>
+
+
+    <!-- 我 界面相关 -->
+    <string name="me_title">我</string>
+    <string name="me_item_str_0">我的钱包</string>
+    <string name="me_item_str_1">兑奖</string>
+    <string name="me_item_str_2">我的彩票</string>
+    <string name="me_item_str_3">委托服务</string>
+    <string name="me_item_str_4">故障申报</string>
+    <string name="me_item_str_5">即开票预订</string>
+    <string name="me_item_str_6">雇员管理</string>
+    <string name="me_item_str_7">我的投注站</string><!--我的辖区-->
+
+    <string name="me_item_str_8">站点缴费</string>
+
+    <string name="me_item_str_9">委托订单</string>
+
+    <!-- 社区 界面相关 -->
+    <string name="comunity_title">社区</string>
+    <string name="photo_menu_string1">小视频</string>
+    <string name="photo_menu_string2">拍照</string>
+    <string name="photo_menu_string3">从手机相册选择</string>
+
+    <string name="comunity_string1">发布我的最新社区动态</string>
+
+
+    <string name="comunity_string2">新的朋友</string>
+    <string name="comunity_string3">接受</string>
+    <string name="comunity_string4">添加</string>
+    <string name="comunity_string5">已添加</string>
+    <string name="comunity_string6">等待验证</string>
+
+    <string name="comunity_string7">选择联系人</string>
+
+    <string name="comunity_string8">相册</string>
+
+    <string name="comunity_info_0">贴数</string>
+    <string name="comunity_info_1">加好友</string>
+    <string name="comunity_info_2">发表文字</string>
+    <string name="comunity_info_3">标题:</string>
+    <string name="comunity_info_4">正文内容:</string>
+    <string name="comunity_info_5">社区列表</string>
+    <string name="comunity_info_6">帖子详情</string>
+    <string name="comunity_info_7">楼主</string>
+    <string name="comunity_info_8">网友点评</string>
+    <string name="comunity_info_9">回复</string>
+    <string name="comunity_info_10">查看更多点评</string>
+    <string name="comunity_info_11">点赞</string>
+    <string name="comunity_info_12">暂时还没有社区，快去创建吧!</string>
+    <string name="comunity_info_13">暂时还没有好友，快去添加吧!</string>
+    <string name="comunity_info_14">暂时还没有社区!</string>
+    <string name="comunity_info_hint_1">帖子标题...</string>
+    <string name="comunity_info_hint_2">帖子内容...</string>
+    <string name="comunity_info_hint_3">社区名</string>
+
+    <string name="comunity_info_hint_4">社区名称</string>
+    <string name="comunity_info_hint_5">社区分类</string>
+    <string name="comunity_info_hint_6">社区介绍</string>
+
+    <string name="contacts_info_1">通讯录</string>
+    <string name="contacts_info_2">添加好友</string>
+    <string name="contacts_info_3">加为好友</string>
+    <string name="contacts_info_4">对方拒绝</string>
+    <string name="contacts_info_5">同意</string>
+    <string name="contacts_info_6">拒绝</string>
+    <string name="contacts_info_7">通过验证</string>
+    <string name="contacts_info_8">搜索</string>
+    <string name="contacts_info_9">发消息</string>
+    <string name="contacts_info_10">地区</string>
+    <string name="contacts_info_11">他的社区</string>
+    <string name="contacts_info_12">详细资料</string>
+    <string name="contacts_info_hint">手机号/账号</string>
+
+    <string name="chat_info_1">发送</string>
+    <string name="chat_info_hint">回复楼主:</string>
+
+    <!-- 站点申报 -->
+    <string name="site_declare_record_info">申报详情</string>
+    <string name="site_declare_info">投注站编号</string>
+    <string name="site_declare_info1">申报分类</string>
+    <string name="site_declare_info2">维修类型</string>
+    <string name="site_declare_info3">故障描述</string>
+    <string name="site_declare_info4">申请数量</string>
+    <string name="site_declare_info5">耗材余量</string>
+    <string name="site_declare_info6">期望日期</string>
+    <string name="site_declare_info7">详情</string>
+    <string name="site_declare_info8">上传照片</string>
+    <string name="site_declare_info9">申报记录</string>
+    <string name="site_declare_info10">备注问题详情......</string>
+    <string name="site_declare_info11">请输入日期</string>
+    <string name="site_declare_info12">请输入申请数量</string>
+    <string name="site_declare_info13">请输入耗材余量</string>
+    <string name="site_declare_info14">申报编号</string>
+    <string name="site_declare_info15">耗材类型</string>
+    <string name="site_declare_info16">当前状态</string>
+    <string name="site_declare_info17">服务评价</string>
+    <string name="site_declare_info18">当前进度</string>
+    <string name="site_declare_info19">评价完成</string>
+    <string name="site_declare_info20">评价</string>
+    <string name="site_declare_info21">参考图</string>
+
+    <string name="site_declare_info22">去维修</string>
+    <string name="site_declare_info23">维修完成</string>
+    <string name="site_declare_info24">延后维修</string>
+
+    <string name="site_declare_info25">等待中</string>
+    <string name="site_declare_info26">维修中</string>
+    <string name="site_declare_info27">维修完成</string>
+
+    <string name="site_declare_btn">申请确认</string>
+    <string name="site_declare_btn1">提交</string>
+    <string name="site_declare_btn2">取消</string>
+    <string name="site_declare_btn3">变更</string>
+
+    <!-- 设置 界面相关 -->
+    <string name="setting_title">设置</string>
+    <string name="setting_info_0">密码修改</string>
+    <string name="setting_info_1">资料修改</string>
+    <string name="setting_info_2">手机号</string>
+    <string name="setting_info_7">关于</string>
+    <string name="setting_info_3">手机号码</string>
+    <string name="setting_info_4">验证码</string>
+
+    <string name="setting_info_5">请输入手机号</string>
+    <string name="setting_info_6">输入验证码</string>
+
+
+    <string name="setting_info_8">昵称</string>
+    <string name="setting_info_9">ID号</string>
+    <string name="setting_info_10">姓名</string>
+    <string name="setting_info_11">性别</string>
+    <string name="setting_info_12">身份证号</string>
+    <string name="setting_info_13">银行卡</string>
+    <string name="setting_info_14">邮箱</string>
+    <string name="setting_info_15">地址</string>
+
+    <string name="setting_info_16">已验证</string>
+    <string name="setting_info_17">添加</string>
+
+    <string name="setting_info_18">请输入身份证号</string>
+    <string name="setting_info_19">请绑定银行卡</string>
+    <string name="setting_info_20">请输入您的邮箱</string>
+    <string name="setting_info_21">请输入地址</string>
+    <string name="setting_info_22">我的地址</string>
+
+    <string name="setting_info_23">请输入姓名</string>
+    <string name="setting_info_24">请选择性别</string>
+
+    <string name="setting_info_25">设置密码</string>
+    <string name="setting_info_26">账号状态</string>
+    <string name="setting_info_27">请输入密码</string>
+    <string name="setting_info_28">新增</string>
+
+    <string name="setting_info_btn0">获取验证码</string>
+    <string name="setting_info_btn1">绑定手机</string>
+    <string name="setting_info_btn2">更换手机</string>
+    <string name="setting_info_btn3">确定</string>
+
+    <string name="setting_info_btn4">新增</string>
+    <string name="setting_info_btn5">新增雇员</string>
+
+
+    <!-- 彩票城 界面相关 -->
+    <string name="lottery_city_title">彩票城</string>
+    <string name="lottery_city_title1">即开票</string>
+    <string name="lottery_city_title2">即开票详情</string>
+    <string name="lottery_city_title3">购物车</string>
+    <string name="lottery_city_title4">订单记录</string>
+
+    <string name="lottery_city_info0">推荐号</string>
+    <string name="lottery_city_info1">热门</string>
+    <string name="lottery_city_info2">订阅数:</string>
+    <string name="lottery_city_info3">关注人气:</string>
+    <string name="lottery_city_info4">订阅</string>
+
+    <string name="lottery_city_info5">历史订单</string>
+    <string name="lottery_city_info6">每周销售排行</string>
+
+    <string name="lottery_city_info7">最高奖金:</string>
+    <string name="lottery_city_info8">中奖机会:</string>
+    <string name="lottery_city_info9">游戏介绍</string>
+    <string name="lottery_city_info91">游戏名称:</string>
+    <string name="lottery_city_info92">发行日期:</string>
+    <string name="lottery_city_info93">面值:</string>
+
+    <string name="lottery_city_info10">游戏规则</string>
+
+    <string name="lottery_city_info11">玩法介绍</string>
+    <string name="lottery_city_info12">查看</string>
+    <string name="lottery_city_info13">玩法规则</string>
+    <string name="lottery_city_info14">奖项规则</string>
+
+    <string name="lottery_city_info15">购彩助手</string>
+    <string name="lottery_city_info16">耗材</string>
+
+    <string name="lottery_city_info17_1">图文模式</string>
+    <string name="lottery_city_info17_2">列表模式</string>
+
+    <string name="lottery_city_info18">限购</string>
+
+    <string name="lottery_city_info19">确认订单</string>
+
+    <string name="lottery_city_info20">走势图</string>
+    <string name="lottery_city_info21">投注倾向</string>
+    <string name="lottery_city_info22">遗漏分析</string>
+
+    <string name="lottery_city_info23">输入名称</string>
+
+    <string name="lottery_city_info24">热门推荐号</string>
+    <string name="lottery_city_info25">推荐号</string>
+
+
+    <string name="lottery_city_tab_top1">综合排序</string>
+    <string name="lottery_city_tab_top2">销售</string>
+    <string name="lottery_city_tab_top3">价格</string>
+    <string name="lottery_city_tab_top4">奖金</string>
+
+    <string name="order_info_str1">订单编号:</string>
+    <string name="order_info_str11">订单编号</string>
+    <string name="order_info_str2">总计: ¥ </string>
+    <string name="order_info_str3">已完成</string>
+
+
+    <string name="billing_btn_str1">选购</string>
+    <string name="billing_btn_str2">结算</string>
+    <string name="billing_btn_str3">加入购物车</string>
+
+    <string name="cart_info_str2">合计: </string>
+    <string name="cart_info_str3">全选 </string>
+    <string name="cart_hint_str1">购物车为空</string>
+
+
+    <string name="address_manager_title">地址管理</string>
+    <string name="address_address_edit_title">编辑地址</string>
+    <string name="address_address_add_title">添加地址</string>
+
+    <string name="address_manager_item_0">地址:</string>
+    <string name="address_manager_item_1">收货人</string>
+    <string name="address_manager_item_2">联系电话</string>
+    <string name="address_manager_item_3">所在地区</string>
+    <string name="address_manager_hint1">请选择</string>
+    <string name="address_manager_item_4">详细地址</string>
+    <string name="address_manager_item_hint_4">请填写详细地址</string>
+    <string name="address_manager_btn1">保存</string>
+    <string name="address_manager_btn2">删除地址</string>
+    <string name="address_manager_btn3">新增地址</string>
+    
+    <!-- 选号 投注相关 -->
+    <string name="betting_str1">去选号</string>
+    <string name="betting_str2">红球区</string>
+    <string name="betting_str3">蓝球区</string>
+    <string name="betting_str4">至少选择6个红球</string>
+    <string name="betting_str5">至少选择1个蓝球</string>
+    <string name="betting_str6">您的选号如下:</string>
+    <string name="betting_str7">增添新号</string>
+    <string name="betting_str8">保存选号</string>
+    <string name="betting_str9">委托投注</string>
+    <string name="betting_str10">选号</string>
+    <string name="betting_str11">被委托人</string>
+    <string name="betting_str12">确定委托给:</string>
+    <string name="betting_str13">站点联系人</string>
+    <string name="betting_str14">没有站点好友，快点去添加吧！</string>
+    <string name="betting_str15">委托人:</string>
+    <string name="betting_str16">剩余时间</string>
+
+
+    <!-- 委托相关  -->
+    <string name="entrust_str_0">委托订单</string>
+    <string name="entrust_str_1">总金额:</string>
+    <string name="entrust_str_2">接单</string>
+    <string name="entrust_str_3">退单</string>
+    <string name="entrust_str_4">去出票</string>
+    <string name="entrust_str_5">付款</string>
+    <string name="entrust_str_6">删除</string>
+    <string name="entrust_str_7">完成出票</string>
+    <string name="entrust_str_8">再次委托</string>
+
+    <string name="entrust_str_9">倍数</string>
+    <string name="entrust_str_10">金额</string>
+    <string name="entrust_str_11">红球:</string>
+    <string name="entrust_str_12">蓝球:</string>
+    <string name="entrust_str13">出票</string>
+
+    <string name="entrust_str14">-复式</string>
+    <string name="entrust_str15">-单式</string>
+
+    <string name="entrust_str16">委托详情</string>
+
+    <string name="entrust_str17_1">胆拖号码</string>
+    <string name="entrust_str17_2">历史排除</string>
+    <string name="entrust_str17_3">随机选号</string>
+    <string name="entrust_str17_4">清空号码</string>
+    <string name="entrust_str17_5">全部删除</string>
+
+    <string name="entrust_str18">您未选号!</string>
+
+
+    <!-- 钱包相关 -->
+
+    <string name="pay_btn_str1">确认支付</string>
+    <string name="pay_btn_str2">去支付</string>
+
+    <string name="pay_info_str1">选择支付方式</string>
+
+    <string name="pay_info_str11">银行卡支付</string>
+    <string name="pay_info_str12">微信支付</string>
+    <string name="pay_info_str13">支付宝支付</string>
+    <string name="pay_info_str14">钱包支付</string>
+
+    <string name="pay_info_str2">优惠详情</string>
+    <string name="pay_info_str3">支付后3日内返到账户内, 请到钱包查看</string>
+    <string name="pay_info_str4">返现金额</string>
+    <string name="pay_info_str5">订单详情</string>
+    <string name="pay_info_str6">商品金额总计</string>
+    <string name="pay_info_str7">其他信息</string>
+    <string name="pay_info_str8">收货信息:</string>
+    <string name="pay_info_str9">支付方式:</string>
+    <string name="pay_info_str10">被委托人:</string>
+
+    <string name="pay_success_str">支付成功</string>
+    <string name="order_detail_str1">您的订单详情如下:</string>
+    <string name="order_detail_str2">日期:</string>
+    <string name="order_detail_str3">付款金额:</string>
+    
+    <string name="wallet_str_0">储蓄卡</string>
+    <string name="wallet_str_11">金额(元)</string>
+    <string name="wallet_str_12">提现金额(元)</string>
+    <string name="wallet_str_13">转账金额(元)</string>
+    <string name="wallet_str_2">添加备注</string>
+    <string name="wallet_str_3">单日限额</string>
+    <string name="wallet_str_4">请输入金额</string>
+    <string name="wallet_str_5">24小时内到账</string>
+    <string name="wallet_str_6">收款方</string>
+    <string name="wallet_str_7">目前余额</string>
+    <string name="wallet_str_8">可提现余额:</string>
+    <string name="wallet_str_9">筛选</string>
+    <string name="wallet_str_10">交易记录</string>
+    <string name="wallet_str_14">到账银行卡</string>
+    <string name="wallet_str_15">提现</string>
+    <string name="wallet_str_16">确认转账</string>
+    <string name="wallet_str_17">目前余额</string>
+
+    <string name="wallet_str_18">使用</string>
+    <string name="wallet_str_19">付款</string>
+
+    <string name="wallet_str_20">+</string>
+
+    <string name="wallet_str_21">请输入支付密码</string>
+    <string name="wallet_str_22">当天24小时前到账</string>
+
+    <string name="wallet_str_23">使用新卡付款</string>
+    <string name="wallet_str_24">选择支付方式</string>
+
+    <string name="wallet_str_25">更换</string>
+    <string name="wallet_str_26">每分钟自动更新</string>
+    <string name="wallet_str_27">选择优先支付方式</string>
+
+    <!-- 业主版本 -->
+    <string name="bettingshop_info1">业主:</string>
+    <string name="bettingshop_info2">站点编号:</string>
+    <string name="bettingshop_info3">面值</string>
+
+    <!-- 管理员版本 -->
+    <string name="manager_str_01">预计配送时间:</string>
+    <string name="manager_str_02">打包完成</string>
+    <string name="manager_str_03">装车完成</string>
+    <string name="manager_str_04">确认签收</string>
+    <string name="manager_str_05">配送失败</string>
+    <string name="manager_str_06">请选择配送失败原因:</string>
+    <string name="manager_str_061">配送失败原因:</string>
+
+    <string name="manager_str_07">耗材配送</string>
+    <string name="manager_str_08">配送管理</string>
+    <string name="manager_str_09">故障维修</string>
+
+    <string name="manager_str_10">打单备货中</string>
+    <string name="manager_str_11">装车中</string>
+    <string name="manager_str_12">配送中</string>
+    <string name="manager_str_13">再次配送中</string>
+    <string name="manager_str_14">已签收</string>
+
+    <string name="manager_str_15">站主</string>
+    <string name="manager_str_16">电话</string>
+    <string name="manager_str_17">站点详情</string>
+    <string name="manager_str_18">期望维修日期:</string>
+    <string name="manager_str_19">完成时间:</string>
+
+    <!-- 选号提示文字 -->
+    <string name="select_tip_str1">红球选号不足!</string>
+    <string name="select_tip_str2">蓝球选号不足!</string>
+
+    <!-- 符号 -->
+    <string name="comma_str">,</string>
+    <string name="money_str">¥</string>
+    <string name="money_str1">元</string>
+    <string name="colon_str">:</string>
+    <string name="x_str">x</string>
+    <string name="special_symbol_str">/</string>
+
+</resources>

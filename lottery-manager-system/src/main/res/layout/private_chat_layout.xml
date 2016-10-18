@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/private_chat_rootview">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/topview_arrows_tv"
+            android:id="@+id/private_chat_topview"/>
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/private_chat_contacts_btn"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/chat_icon1"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:id="@+id/private_chat_contacts_btn_child1"/>
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:id="@+id/private_chat_contacts_btn_child2"
+                android:src="@drawable/oval_shape_8"
+                android:scaleType="fitCenter"
+                android:layout_alignTop="@+id/private_chat_contacts_btn_child1"
+                android:layout_toRightOf="@+id/private_chat_contacts_btn_child1"
+                android:layout_toEndOf="@+id/private_chat_contacts_btn_child1"
+                android:layout_marginLeft="-2dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_13">
+
+            <com.manager.view.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/private_chat_search_view"
+                app:hint_text="@string/contacts_info_hint"
+                app:type="3"
+                app:cancel_btn="1"/>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.manager.widgets.MyListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/private_chat_listview"
+                    android:divider="@drawable/line_single_0"
+                    android:dividerHeight="1dp"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_0"
+                    android:layout_marginBottom="13dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

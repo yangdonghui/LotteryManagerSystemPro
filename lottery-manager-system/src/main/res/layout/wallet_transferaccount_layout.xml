@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/wallet_transferaccount_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+
+                    <com.manager.widgets.CircleImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/lena_debug"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/wallet_transferaccount_headicon_img"
+                        app:border_width="1dp"
+                        app:border_color="@android:color/transparent"/>
+
+                    <TextView
+                        style="@style/text_size_16_text_color_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/setting_info_8"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/wallet_transferaccount_nick_tv"
+                        android:visibility="visible"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/username_id"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            style="@style/text_size_14_text_color_4"
+                            android:id="@+id/me__username_tv"/>
+
+                        <TextView
+                            style="@style/text_size_14_text_color_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="111111"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:id="@+id/wallet_transferaccount_username_tv"
+                            android:layout_marginLeft="5dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_1"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_color_7">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/wallet_str_13"
+                                android:layout_gravity="center_vertical"
+                                style="@style/text_size_14_text_color_11"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/text_size_18_text_color_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/money_str"
+                                android:layout_below="@+id/textView80"/>
+
+                            <EditText
+                                style="@style/text_size_28_text_color_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:inputType="number|numberSigned"
+                                android:background="@null"
+                                android:hint="0.00"
+                                android:textColorHint="@color/text_color_4"
+                                android:imeOptions="actionDone"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:layout_marginLeft="10dp"
+                                android:singleLine="true"
+                                android:id="@+id/wallet_transferaccount_edit1"
+                                android:digits="1234567890."
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="@drawable/line_single_1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/wallet_withdraw_tv1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <EditText
+                            style="@style/text_size_14_text_color_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ems="20"
+                            android:background="@null"
+                            android:hint="@string/wallet_str_2"
+                            android:textColorHint="@color/text_color_4"
+                            android:imeOptions="actionDone"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:inputType="text"
+                            android:id="@+id/wallet_transferaccount_edit2"
+                            android:maxLength="20"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="@drawable/line_single_1"
+                    />
+
+                <Button
+                    style="@style/text_size_14_text_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="@string/wallet_str_16"
+                    android:id="@+id/wallet_transferaccount_ok_btn"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/rect_radius_14_2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

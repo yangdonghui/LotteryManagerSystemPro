@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/text_size_12_text_color_3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/pay_info_str2"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            style="@style/text_size_12_text_color_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_info_str3"
+            android:id="@+id/textView112"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        android:id="@+id/imageView117"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bg_color_7"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            style="@style/text_size_12_text_color_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_info_str4"
+            android:id="@+id/textView113"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            style="@style/text_size_12_text_color_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debug_str_16"
+            android:id="@+id/textView114"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            style="@style/text_size_12_text_color_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView115"
+            android:text="¥ 120"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line_single_0"
+        android:id="@+id/imageView118"/>
+</LinearLayout>

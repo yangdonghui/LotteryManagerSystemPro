@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/topview_arrows_tv"
+        android:id="@+id/winning_detail_topview"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_4">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:fillViewport="false"
+            android:scrollbars="none"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_radius_10_3">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/text_size_12_text_color_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="双色球"
+                                    android:layout_gravity="center_vertical"
+                                    android:id="@+id/winning_detail_tv1"/>
+
+                                <TextView
+                                    style="@style/text_size_12_text_color_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="第2016089期"
+                                    android:layout_gravity="center_vertical"
+                                    android:id="@+id/winning_detail_tv11"/>
+
+                                <TextView
+                                    style="@style/text_size_12_text_color_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:id="@+id/textView9"
+                                    android:gravity="center_vertical|center_horizontal"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"/>
+
+                                <TextView
+                                    style="@style/text_size_12_text_color_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="单式"
+                                    android:layout_gravity="center_vertical"
+                                    android:id="@+id/winning_detail_tv12"/>
+
+                                <TextView
+                                    style="@style/text_size_9_text_white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="中奖"
+                                    android:id="@+id/winning_detail_tv13"
+                                    android:background="@mipmap/winning_nav_43"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="center_vertical|center_horizontal"/>
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/text_size_12_text_color_3"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:text="x2注"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="2dp"
+                                android:id="@+id/winning_detail_tv2"/>
+
+                            <TextView
+                                style="@style/text_size_12_text_color_3"
+                                android:layout_width="50dp"
+                                android:layout_height="25dp"
+                                android:text="¥4"
+                                android:layout_marginLeft="2dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/winning_detail_tv3"
+                                android:visibility="visible"
+                                android:layout_marginRight="15dp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@drawable/line_single_2"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:visibility="visible"/>
+
+                        <com.manager.widgets.MyListView1
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/winning_detail_listview"
+                            android:layout_marginTop="5dp"
+                            android:divider="@null"
+                            android:listSelector="@android:color/transparent"
+                            android:cacheColorHint="#00FFFFFF"
+                            android:layout_marginBottom="5dp"
+                            android:visibility="visible"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:src="@drawable/line_single_2"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:visibility="visible"
+                            />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                style="@style/text_size_12_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="本期所中奖项为:"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="2dp"
+                                />
+
+                            <TextView
+                                style="@style/text_size_12_text_color_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="四等奖"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp">
+
+                            <TextView
+                                style="@style/text_size_12_text_color_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="奖金共计:"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="2dp"/>
+
+                            <TextView
+                                style="@style/text_size_12_text_color_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20元"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:background="@drawable/rect_radius_10_2"
+                        >
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/bg_color_9"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/list_item_28_icon"
+        android:src="@drawable/lena_debug"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/list_item_28_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible"
+                android:text="体彩管理员"
+                style="@style/text_size_14_text_color_12"
+                />
+
+            <TextView
+                style="@style/text_size_12_text_color_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible"
+                android:text="下午3:21"
+                android:layout_alignParentRight="true"
+                android:id="@+id/list_item_28_tv2"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="哈哈哈哈"
+                android:id="@+id/list_item_28_tv3"
+                style="@style/text_size_12_text_color_4"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:id="@+id/list_item_28_message_num_tipview"
+                android:background="@drawable/oval_shape_8"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    style="@style/text_size_9_text_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="visible"
+                    android:text="1"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/list_item_28_tv4"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

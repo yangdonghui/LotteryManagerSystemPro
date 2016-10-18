@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:descendantFocusability="afterDescendants">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/list_item_17_23_checkbox_view">
+
+            <CheckBox
+                style="@style/text_size_15_text_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:checked="true"
+                android:button="@drawable/pay_way_check"
+                android:enabled="false"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/list_item_17_23_checkbox"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entrust_str_11"
+                    style="@style/text_size_12_text_bg_color_11"/>
+
+                <com.manager.widgets.MyGridView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list_item_17_23_gridview1"
+                    android:layout_marginLeft="2dp"
+                    android:numColumns="auto_fit"
+                    android:columnWidth="15dp"
+                    android:stretchMode="spacingWidth"
+                    android:verticalSpacing="3dp"
+                    android:horizontalSpacing="3dp"
+                    android:scrollbars="none"
+                    android:listSelector="@android:color/transparent"
+                    android:cacheColorHint="#00FFFFFF"
+                    app:line_bmp="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/text_size_12_text_bg_color_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entrust_str_12"/>
+
+                <com.manager.widgets.MyGridView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list_item_17_23_gridview2"
+                    android:layout_marginLeft="2dp"
+                    android:numColumns="auto_fit"
+                    android:columnWidth="15dp"
+                    android:stretchMode="spacingWidth"
+                    android:verticalSpacing="3dp"
+                    android:horizontalSpacing="3dp"
+                    android:scrollbars="none"
+                    android:listSelector="@android:color/transparent"
+                    android:cacheColorHint="#00FFFFFF"
+                    app:line_bmp="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical|bottom">
+
+                <TextView
+                    style="@style/text_size_12_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center_vertical|bottom"/>
+
+                <EditText
+                    style="@style/text_size_12_text_color_3"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/rect_radius_19_1"
+                    android:text="1"
+                    android:inputType="numberSigned"
+                    android:textAlignment="center"
+                    android:imeOptions="actionDone"
+                    android:layout_gravity="center_vertical|bottom"
+                    android:layout_weight="1"
+                    android:id="@+id/list_item_17_23_edit"
+                    android:singleLine="true"
+                    android:clickable="true"
+                    android:focusable="false"/>
+
+                <TextView
+                    style="@style/text_size_12_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical|bottom"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|bottom"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    style="@style/text_size_12_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/money_str"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    style="@style/text_size_12_text_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:id="@+id/list_item_17_23_tv1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

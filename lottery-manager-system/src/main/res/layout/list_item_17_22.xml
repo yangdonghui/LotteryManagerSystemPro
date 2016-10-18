@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/list_item_17_22_tv1"
+            style="@style/text_size_12_text_color_2"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entrust_str_11"
+                    style="@style/text_size_12_text_bg_color_11"/>
+
+                <com.manager.widgets.MyGridView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list_item_17_22_gridview1"
+                    android:layout_marginLeft="2dp"
+                    android:numColumns="auto_fit"
+                    android:columnWidth="15dp"
+                    android:stretchMode="spacingWidth"
+                    android:verticalSpacing="3dp"
+                    android:horizontalSpacing="3dp"
+                    android:scrollbars="none"
+                    android:listSelector="@android:color/transparent"
+                    android:cacheColorHint="#00FFFFFF"
+                    app:line_bmp="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/text_size_12_text_bg_color_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entrust_str_12"/>
+
+                <com.manager.widgets.MyGridView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list_item_17_22_gridview2"
+                    android:layout_marginLeft="2dp"
+                    android:numColumns="auto_fit"
+                    android:columnWidth="15dp"
+                    android:stretchMode="spacingWidth"
+                    android:verticalSpacing="3dp"
+                    android:horizontalSpacing="3dp"
+                    android:scrollbars="none"
+                    android:listSelector="@android:color/transparent"
+                    android:cacheColorHint="#00FFFFFF"
+                    app:line_bmp="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/list_item_17_22_view">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="bottom"
+                        style="@style/text_size_12_text_color_3"/>
+
+                    <EditText
+                        android:layout_width="45dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/rect_radius_19_1"
+                        android:layout_gravity="bottom"
+                        android:text="1"
+                        style="@style/text_size_12_text_color_3"
+                        android:inputType="numberSigned"
+                        android:textAlignment="center"
+                        android:id="@+id/list_item_17_22_edittext"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="注"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="bottom"
+                        style="@style/text_size_12_text_color_3"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/text_size_12_text_color_3"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="¥2"
+                        android:id="@+id/list_item_17_22_tv2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lottery_city_nav_4"
+                android:background="@null"
+                android:layout_marginBottom="3dp"
+                android:id="@+id/list_item_17_22_remove_btn"
+                android:clickable="true"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

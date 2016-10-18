@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:id="@+id/register_progress_framelayout111">
+
+        <FrameLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/register_progress_framelayout1"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_progress_view1"
+                android:src="@drawable/oval_shape_4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/register_progress_tv1"
+                android:layout_gravity="center"
+                style="@style/text_size_15_text_color_3"/>
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:id="@+id/register_progress_line1"
+            android:src="@drawable/line_single_0"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/oval_shape_4"
+            android:id="@+id/register_progress_framelayout2"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_progress_view2"
+                android:src="@drawable/oval_shape_4"/>
+
+            <TextView
+                style="@style/text_size_15_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/register_progress_tv2"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:id="@+id/register_progress_line2"
+            android:src="@drawable/line_single_0"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/oval_shape_4"
+            android:id="@+id/register_progress_framelayout3"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_progress_view3"
+                android:src="@drawable/oval_shape_4"/>
+
+            <TextView
+                style="@style/text_size_15_text_color_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/register_progress_tv3"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
